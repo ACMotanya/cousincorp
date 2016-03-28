@@ -4242,7 +4242,7 @@ a.gmap-btn .fa-angle-down {
    46. Navbar - Regular
    ============================================================== */
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-    max-height: auto;
+    max-height: none;
 }
 .navbar {
     background: rgba(255, 255, 255, 1);
@@ -4252,19 +4252,19 @@ a.gmap-btn .fa-angle-down {
 }
 .navbar-brand {
     display: block;
-    max-width: 200px;
+    max-width: 400px;
     float: left;
     padding: 20px 15px;
     font-size: 18px;
     line-height: 20px;
-    height: 60px;
+    height: 2000px;
 }
 .navbar .navbar-nav li a {
     font-size: 13px;
     color: #666;
     font-weight: 400;
     background: 0 0;
-	letter-spacing:1px;
+	  letter-spacing:1px;
     text-transform: uppercase;
     -webkit-transition: color .3s ease;
     -moz-transition: color .3s ease;
@@ -5315,6 +5315,11 @@ select.sel-list-tpl {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
+	  -webkit-align-items: center;
+	  align-items: center;
+}
+
+a.navbar-brand img {
+  margin-left: auto;
+  margin-right: auto;
 }
