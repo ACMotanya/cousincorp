@@ -103,15 +103,14 @@ function debounce(func, wait, immediate) {
 		return result;
 	};
 }
-
+/*
 $(window).on('load, resize', function mobileViewUpdate() {
     var viewportWidth = $(window).width();
-    if (viewportWidth < 600) {
+    if (viewportWidth < 1000) {
         $(".col-md-8").removeClass("col-md-8").addClass("col-md-12");
     }
 });
-
-
+*/
 var requesting = false;
 
 var killRequesting = debounce(function () {
