@@ -11,6 +11,10 @@ div.col-sm-12 img {
 	width: 63%;
 }
 
+address {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1199px) {
 
 }
