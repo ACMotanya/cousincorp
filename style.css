@@ -239,7 +239,7 @@ small { font-family: 'Lato', sans-serif; }
 	float: none;
 	width: 1220px;
 	margin: 0 auto;
-	background-color: #FFF;
+	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -1121,7 +1121,7 @@ body.stretched #header.full-header .container {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
-	color: #333;
+	color: #000;
 	font-weight: bold;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -11476,7 +11476,7 @@ button.toast-close-button {
 }
 .footer-logo {
   display: block;
-  margin: -10px 0px 5px -10px;
+  margin: -20px 0px 5px -20px;
 }
 
 /* ----------------------------------------------------------------
