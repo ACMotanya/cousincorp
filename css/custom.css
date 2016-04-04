@@ -6,7 +6,8 @@
 div.col_three_fifth.portfolio-single-image {
 	float: none;
 	margin: auto;
-	width: 75%;
+	width: 80%;
+	margin-top: -20px;
 }
 
 div.col-sm-12 img {
