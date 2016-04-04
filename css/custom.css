@@ -2,19 +2,15 @@
 	Custom CSS
 -----------------------------------------------------------------*/
 
-#logo img {
-	bottom: 20px;
-	height: 145px;
-}
 
 div.col_three_fifth.portfolio-single-image {
 	float: none;
 	margin: auto;
-	width: 70%;
+	width: 75%;
 }
 
 div.col-sm-12 img {
-	width: 63%;
+	width: 45%;
 }
 
 address {
@@ -27,11 +23,6 @@ address {
 
 
 @media (max-width: 991px) {
-	#logo img {
-		bottom: 0px;
-		height: 100px;
-	}
-
 	div.col_three_fifth.portfolio-single-image {
 		width: 100%;
 	}
