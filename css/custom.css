@@ -10,6 +10,11 @@ div.col_three_fifth.portfolio-single-image {
 	margin-top: -20px;
 }
 
+.tp-caption.Agency-PlayBtn,
+.Agency-PlayBtn {
+	border-radius: 6px 6px 6px 6px;
+}
+
 div.col-sm-12 img {
 	width: 45%;
 }
