@@ -2,6 +2,20 @@
 	Custom CSS
 -----------------------------------------------------------------*/
 
+#header.sticky-style-2 {
+		height: 230px;
+}
+
+#header.sticky-style-2 > .container {
+	height: 112px;
+}
+
+#header.sticky-style-2 #logo {
+	margin: 10px 0;
+}
+#logo img {
+	height: 85px;
+}
 
 div.col_three_fifth.portfolio-single-image {
 	float: none;
