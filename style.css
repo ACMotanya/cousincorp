@@ -10278,12 +10278,12 @@ blockquote.pull-right {
 
 .owl-carousel:hover .owl-nav [class*=owl-] {
 	opacity: 1;
-	left: -18px;
+	left: 18px;
 }
 
 .owl-carousel:hover .owl-nav .owl-next {
 	left: auto;
-	right: -18px;
+	right: 18px;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
