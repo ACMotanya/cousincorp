@@ -4,6 +4,17 @@ $.fn.inlineStyle = function (prop) {
 	return this.prop("style")[$.camelCase(prop)];
 };
 
+
+$(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 1370) {
+        $(".company").removeClass("col-sm-3").addClass("col-sm-6");
+    } else {
+				$(".company").removeClass("col-sm-6").addClass("col-sm-3");
+		}
+});
+
+
 $.fn.doOnce = function( func ) {
 	this.length && func.apply( this );
 	return this;

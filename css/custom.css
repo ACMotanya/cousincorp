@@ -29,13 +29,8 @@ div.col_three_fifth.portfolio-single-image {
 	border-radius: 4px 4px 4px 4px;
 }
 
-
 div.col-sm-12 img {
 	width: 95%;
-}
-
-address {
-  margin-bottom: 10px;
 }
 
 @media (max-width: 1199px) {
