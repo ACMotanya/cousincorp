@@ -32,6 +32,13 @@ div.col_three_fifth.portfolio-single-image {
 div.col-sm-12 img {
 	width: 95%;
 }
+.copyrights-menu a {
+	font-weight: 900;
+}
+
+.copyrights-menu a:hover {
+	color: #1abc9C;
+}
 
 @media (max-width: 1199px) {
 

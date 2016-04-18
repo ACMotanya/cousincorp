@@ -3794,7 +3794,7 @@ website:   	http://www.themepunch.com
 }
 .tp-caption.Agency-PlayBtn,
 .Agency-PlayBtn {
-    color: #1abc9c;
+    color: #fff;
     font-size: 30px;
     line-height: 71px;
     font-weight: 500;
@@ -3803,7 +3803,7 @@ website:   	http://www.themepunch.com
     padding: 0px 0px 0px 0px;
     text-decoration: none;
     background-color: transparent;
-    border-color: #1abc9C;
+    border-color: #fff;
     border-style: solid;
     border-width: 2px;
     border-radius: 6px 6px 6px 6px;
@@ -3822,7 +3822,7 @@ website:   	http://www.themepunch.com
 }
 .tp-caption.Agency-SmallText,
 .Agency-SmallText {
-    color: #1abc9c;
+    color: #fff;
     font-size: 12px;
     line-height: 12px;
     font-weight: 900;
