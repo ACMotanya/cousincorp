@@ -22,84 +22,11 @@
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
-	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/settings.css" | prepend: site.baseurl }}" media="screen" />
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/layers.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" type="text/css" href="{{ "/include/rs-plugin/css/navigation.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/custom.css" | prepend: site.baseurl }}" type="text/css" />
+	<script type="text/javascript" src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
 
 	<!-- Document Title
 	============================================= -->
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-	<style>
-		.demos-filter {
-			margin: 0;
-			text-align: right;
-		}
-
-		.demos-filter li {
-			list-style: none;
-			margin: 10px 0px;
-		}
-
-		.demos-filter li a {
-			display: block;
-			border: 0;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			color: #444;
-		}
-
-		.demos-filter li a:hover,
-		.demos-filter li.activeFilter a { color: #1ABC9C; }
-
-		@media (max-width: 991px) {
-			.demos-filter { text-align: center; }
-
-			.demos-filter li {
-				float: left;
-				width: 33.3%;
-				padding: 0 20px;
-			}
-		}
-
-		@media (max-width: 767px) {
-			.demos-filter li { width: 50%; }
-		}
-
-		.revo-slider-emphasis-text {
-			font-size: 64px;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-family: 'Raleway', sans-serif;
-			padding: 15px 20px;
-			border-top: 2px solid #FFF;
-			border-bottom: 2px solid #FFF;
-		}
-
-		.revo-slider-desc-text {
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
-			width: 650px;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		.revo-slider-caps-text {
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 3px;
-			font-family: 'Raleway', sans-serif;
-		}
-		.tp-video-play-button { display: none !important; }
-
-		.tp-caption { white-space: nowrap; }
-
-		.heading-block:after {
-			border: none;
-		}
-
-	</style>
 
 </head>
