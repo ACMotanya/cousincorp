@@ -10,6 +10,13 @@
 <script type="text/javascript" src="{{ "/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
+$('a').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 1000);
+  return false;
+});
+
   var tpj = jQuery;
 
   var revapi280;
