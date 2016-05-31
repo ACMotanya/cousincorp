@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+ <!-- Bootstrap File Upload CSS -->
+ <link rel="stylesheet" href="{{ "/css/components/bs-filestyle.css" | prepend: site.baseurl }}" type="text/css" />
 
 <!-- Page Title
 		============================================= -->
@@ -12,7 +13,6 @@ layout: default
 				<span>Join our Fabulous Team of Intelligent Individuals</span>
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Pages</a></li>
 					<li class="active">Jobs</li>
 				</ol>
 			</div>
@@ -205,7 +205,7 @@ layout: default
 
 						<div id="job-apply" class="heading-block highlight-me">
 							<h2>Apply Now</h2>
-							<span>And we'll get back to you within 48 hours.</span>
+							<span>And we'll get back to you as soon as possible.</span>
 						</div>
 
 						<div class="contact-widget">
@@ -285,6 +285,11 @@ layout: default
 
 								<div class="col_full hidden">
 									<input type="text" id="template-jobform-botcheck" name="template-jobform-botcheck" value="" class="sm-form-control" />
+								</div>
+
+								<div class="col-full">
+									<label>Upload Resume</label><br>
+									<input id="input-1" type="file" name="resume" class="file">
 								</div>
 
 								<div class="col_full">
