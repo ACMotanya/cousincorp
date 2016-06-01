@@ -114,14 +114,15 @@ function debounce(func, wait, immediate) {
 		return result;
 	};
 }
-/*
+
+
 $(window).on('load, resize', function mobileViewUpdate() {
     var viewportWidth = $(window).width();
-    if (viewportWidth < 1000) {
-        $(".col-md-8").removeClass("col-md-8").addClass("col-md-12");
+    if (viewportWidth < 767) {
+        $(".common-height").removeClass("common-height");
     }
 });
-*/
+
 var requesting = false;
 
 var killRequesting = debounce(function () {
@@ -3003,7 +3004,11 @@ var SEMICOLON = SEMICOLON || {};
 				notifyCloseButton = notifyElement.attr('data-notify-close');
 
 			if( !notifyPosition ) { notifyPosition = 'toast-top-right'; } else { notifyPosition = 'toast-' + notifyElement.attr('data-notify-position'); }
-			if( !notifyMsg ) { notifyMsg = 'Please set a message!'; }
+
+			////////////////////////////////////////////////////////////////////////////
+			// changed so that i can send email on contact page with a proper message //
+			////////////////////////////////////////////////////////////////////////////
+			if( !notifyMsg ) { notifyMsg = 'Your message has been sent!'; }
 			if( notifyCloseButton == 'true' ) { notifyCloseButton = true; } else { notifyCloseButton = false; }
 
 			toastr.options.positionClass = notifyPosition;
