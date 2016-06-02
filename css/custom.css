@@ -25,6 +25,9 @@
 	height: 50px;
 }
 
+.video-coming {
+	margin-left: 40px;
+}
 
 #primary-menu ul li > a {
 	color: #666;
@@ -98,6 +101,9 @@ div.col-sm-12 img {
 @media (max-width: 767px) {
 	div.col-sm-12 img {
 		width: 60%;
+	}
+	.video-coming {
+		margin-left: 0px;
 	}
 }
 
