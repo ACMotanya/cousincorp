@@ -10,3 +10,12 @@
 <!-- Footer Scripts
 ============================================= -->
 <script type="text/javascript" src="{{ "/js/functions.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+$('.divisions').click(function(){
+  $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 1000);
+  return false;
+});
+</script>
