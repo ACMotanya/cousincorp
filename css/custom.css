@@ -34,6 +34,8 @@
 	bottom: 20px;
 	right: 50px;
 }
+/* --------------  for coming soon site --------------- */
+
 
 #primary-menu ul li > a {
 	color: #666;
@@ -51,9 +53,8 @@ div.col_three_fifth.portfolio-single-image {
 	margin-top: -20px;
 }
 
-.tp-caption.Agency-PlayBtn,
-.Agency-PlayBtn {
-	border-radius: 4px 4px 4px 4px;
+span.before-heading {
+	font-size: 18px;
 }
 
 a > i.front {
@@ -73,9 +74,17 @@ div.col-sm-12 img {
 	color: #1abc9C;
 }
 
+.team-title h4 {
+	color: #444;
+}
+
+.jobs-blurb {
+	margin-bottom: 30px;
+}
+
 @media (min-width: 1386px) {
 	#ljlogo {
-		margin: 15px 0px;
+		margin: 24px 0px;
 	}
 	#diylogo {
 		margin-bottom: 5px;
@@ -108,16 +117,19 @@ div.col-sm-12 img {
 	div.col-sm-12 img {
 		width: 60%;
 	}
+
+/* --------------  for coming soon site --------------- */
 	.video-coming {
 		left: 0px;
 		bottom: 0px;
 	}
-	/* --------------  for coming soon site --------------- */
+
 	.caption-coming {
 		bottom: 0px;
 		right: 0px;
 	}
 }
+/* --------------  for coming soon site --------------- */
 
 @media (min-width: 480px) and (max-width: 767px) {
 
