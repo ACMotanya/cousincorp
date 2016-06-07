@@ -53,9 +53,8 @@ div.col_three_fifth.portfolio-single-image {
 	margin-top: -20px;
 }
 
-.tp-caption.Agency-PlayBtn,
-.Agency-PlayBtn {
-	border-radius: 4px 4px 4px 4px;
+span.before-heading {
+	font-size: 18px;
 }
 
 a > i.front {
@@ -85,7 +84,7 @@ div.col-sm-12 img {
 
 @media (min-width: 1386px) {
 	#ljlogo {
-		margin: 15px 0px;
+		margin: 24px 0px;
 	}
 	#diylogo {
 		margin-bottom: 5px;
