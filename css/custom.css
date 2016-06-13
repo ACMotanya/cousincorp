@@ -11,11 +11,11 @@
 }
 
 #header.sticky-style-2 > .container {
-	height: 112px;
+	height: 130px;
 }
 
 #header.sticky-style-2 #logo {
-	margin: 10px 0;
+	margin: 25px 0;
 }
 #logo img {
 	height: 85px;
@@ -59,6 +59,7 @@ div.col_three_fifth.portfolio-single-image {
 
 span.before-heading {
 	font-size: 18px;
+	font-family: Lato;
 }
 
 a > i.front {
@@ -72,10 +73,15 @@ div.col-sm-12 img {
 
 .copyrights-menu a {
 	font-weight: 900;
+	color: #666;
 }
 
 .copyrights-menu a:hover {
 	color: #1abc9C;
+}
+
+.social-icon i {
+	color: #666;
 }
 
 .team-title h4 {
@@ -113,13 +119,13 @@ div.col-sm-12 img {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	div.col-sm-12 img {
-		width: 80%;
+		width: 60%;
 	}
 }
 
 @media (max-width: 767px) {
 	div.col-sm-12 img {
-		width: 60%;
+		width: 80%;
 	}
 
 /* --------------  for coming soon site --------------- */
