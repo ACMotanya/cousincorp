@@ -2,6 +2,10 @@
 	Custom CSS
 -----------------------------------------------------------------*/
 
+#content p {
+  font-size: 15px;
+}
+
 #header.sticky-style-2 {
 		height: 162px;
 }
@@ -63,7 +67,7 @@ a > i.front {
 
 /* styles for logos on index page */
 div.col-sm-12 img {
-	width: 95%;
+	width: 75%;
 }
 
 .copyrights-menu a {
