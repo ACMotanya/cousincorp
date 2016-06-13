@@ -2,6 +2,12 @@
 	Custom CSS
 -----------------------------------------------------------------*/
 
+
+/* gets rid of random line of demarcation  on headings*/
+.heading-block:after {
+  border: none;
+}
+
 #content p {
   font-size: 15px;
 }
