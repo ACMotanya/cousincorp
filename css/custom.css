@@ -124,10 +124,22 @@ div.col-sm-12 img {
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  #primary-menu.style-2 > div > ul > li > a {
+    padding: 15px 10px;
+  }
+
+}
+
 @media (max-width: 991px) {
 	div.col_three_fifth.portfolio-single-image {
 		width: 100%;
 	}
+
+  #header.sticky-style-2 > .container {
+    height: auto;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
