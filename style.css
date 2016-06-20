@@ -10509,7 +10509,7 @@ label {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #333;
+	color: #666;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
@@ -10691,7 +10691,7 @@ label.error { display: none !important; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #333;
+	color: #666;
 }
 
 .emphasis-title h1,
