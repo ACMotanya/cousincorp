@@ -23,21 +23,49 @@
       <div class="container clearfix">
         <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
         <ul>
-          <li>
-            <a href="{{ site.baseurl }}/">
-              <div>Home</div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/about">
-              <div>About Us</div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/meet">
-              <div>Meet Our Team</div>
-            </a>
-          </li>
+          {% if page.url == "" %}
+            <li class="current">
+              <a href="{{ site.baseurl }}/">
+                <div>Home</div>
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/">
+                <div>Home</div>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if page.url == "/about/" %}
+            <li class="current">
+              <a href="{{ site.baseurl }}/about">
+                <div>About Us</div>
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/about">
+                <div>About Us</div>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if page.url == "/meet/" %}
+            <li class="current">
+              <a href="{{ site.baseurl }}/meet">
+                <div>Meet Our Team</div>
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/meet">
+                <div>Meet Our Team</div>
+              </a>
+            </li>
+          {% endif %}
+
+
           <li>
             <a href="http://www.cousinDIY.com" target="_blank">
               <div>Cousin DIY</div>
@@ -48,16 +76,34 @@
               <div>Laura Janelle</div>
             </a>
           </li>
-          <li>
-            <a href="{{ site.baseurl }}/careers">
-              <div>Careers</div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/contact">
-              <div>contact</div>
-            </a>
-          </li>
+
+          {% if page.url == "/careers/" %}
+            <li class="current">
+              <a href="{{ site.baseurl }}/careers">
+                <div>Careers</div>
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/careers">
+                <div>Careers</div>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if page.url == "/contact/" %}
+            <li class="current">
+              <a href="{{ site.baseurl }}/contact">
+                <div>contact</div>
+              </a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/contact">
+                <div>contact</div>
+              </a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </nav>
@@ -67,3 +113,4 @@
 
 </header>
 <!-- #header end -->
+s
