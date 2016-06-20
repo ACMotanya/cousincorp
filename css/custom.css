@@ -35,11 +35,16 @@
 	height: 50px;
 }
 
+video {
+  width: 80%
+}
+
 /* --------------  for coming soon site --------------- */
 .video-coming {
 	left: 100px;
 	bottom: 60px;
 }
+
 .caption-coming {
 	bottom: 20px;
 	right: 50px;
@@ -108,7 +113,9 @@ div.col-sm-12 img {
 }
 
 @media (max-width: 1199px) {
-
+  video {
+    width: 100%
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1385px) {
