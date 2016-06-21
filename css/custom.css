@@ -11,7 +11,7 @@
 #content p {
   font-size: 15px;
 }
-
+/*
 #header.sticky-style-2 {
 		height: 162px;
 }
@@ -23,6 +23,7 @@
 #header.sticky-style-2 #logo {
 	margin: 25px 0;
 }
+
 #logo img {
 	height: 85px;
 }
@@ -31,8 +32,13 @@
 	height: 50px;
 }
 
-#header.sticky-header.sticky-style-2 #header-wrap {
-	height: 50px;
+#primary-menu.style-2 > div > ul > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+*/
+#primary-menu ul li > a {
+	color: #666;
 }
 
 video {
@@ -51,15 +57,6 @@ video {
 }
 /* --------------  for coming soon site --------------- */
 
-
-#primary-menu ul li > a {
-	color: #666;
-}
-
-#primary-menu.style-2 > div > ul > li > a {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
 
 div.col_three_fifth.portfolio-single-image {
 	float: none;
@@ -139,6 +136,10 @@ div.col-sm-12 img {
   #header.sticky-style-2 > .container {
     height: auto;
     margin-top: 10px;
+  }
+
+  #logo img {
+  	height: 75px;
   }
 }
 
