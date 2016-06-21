@@ -11,6 +11,21 @@
 #content p {
   font-size: 15px;
 }
+
+.siteHeader{
+  width: auto;
+  height: 700px;
+  overflow: hidden;
+  margin-bottom: -150px;
+  margin-top: -150px;
+  z-index: 0;
+  position: relative;
+}
+
+.siteHeader .siteLogo{
+    margin: -100px;
+}
+
 /*
 #header.sticky-style-2 {
 		height: 162px;
@@ -100,6 +115,10 @@ div.col-sm-12 img {
 	margin-bottom: 30px;
 }
 
+#page-title.page-title-parallax {
+
+}
+
 @media (min-width: 1386px) {
 	#ljlogo {
 		margin: 24px 0px;
@@ -123,7 +142,7 @@ div.col-sm-12 img {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #primary-menu.style-2 > div > ul > li > a {
-    padding: 15px 10px;
+    padding: 30px 10px;
   }
 
 }

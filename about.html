@@ -74,8 +74,13 @@ jQuery(window).load( function(){
 <!-- Page Title
 -============================================= -->
 
- <section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="padding: 120px 0; background-image: url('{{ site.baseurl }}/img/header-about.jpg'); background-size: cover; background-position: center center;" data-stellar-background-ratio="0.3">
+ <section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="padding: 120px 0; background-image: url('{{ site.baseurl }}/img/header-about.jpg'); background-repeat: no-repeat; background-position: center center; display:none;" data-stellar-background-ratio="0.3">
  </section>
+
+<section id="page-title" class="siteHeader center" style="background: white; display">
+  <img src="{{ site.baseurl }}/img/header-about.jpg" class="siteHeader" />
+</section>
+
 
  <div class="content-wrap nopadding">
 
