@@ -3,29 +3,7 @@ layout: default
 ---
 
 <script>
-
 jQuery(window).load( function(){
-
-  var radarChartData = {
-    labels : ["A","B","C","D","E","F","G"],
-    datasets : [
-      {
-        fillColor : "rgba(220,220,220,0.5)",
-        strokeColor : "rgba(220,220,220,1)",
-        pointColor : "rgba(220,220,220,1)",
-        pointStrokeColor : "#fff",
-        data : [65,59,90,81,56,55,40]
-      },
-      {
-        fillColor : "rgba(151,187,205,0.5)",
-        strokeColor : "rgba(151,187,205,1)",
-        pointColor : "rgba(151,187,205,1)",
-        pointStrokeColor : "#fff",
-        data : [28,48,40,19,96,27,100]
-      }
-    ]
-
-  };
 
   var doughnutChartData = [
     {
@@ -52,17 +30,10 @@ jQuery(window).load( function(){
 
   var globalGraphSettings = {animation : Modernizr.canvas};
 
-  function showRadarChart(){
-    var ctx = document.getElementById("radarChartCanvas").getContext("2d");
-    new Chart(ctx).Radar(radarChartData,globalGraphSettings);
-  }
-
   function showDoughnutChart(){
     var ctx = document.getElementById("doughnutChartCanvas").getContext("2d");
     new Chart(ctx).Doughnut(doughnutChartData,globalGraphSettings);
   }
-
-  $('#radarChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showRadarChart,300); },{accX: 0, accY: -155},'easeInCubic');
 
   $('#doughnutChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showDoughnutChart,300); },{accX: 0, accY: -155},'easeInCubic');
 
@@ -74,10 +45,10 @@ jQuery(window).load( function(){
 <!-- Page Title
 -============================================= -->
 
- <section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="padding: 120px 0; background-image: url('{{ site.baseurl }}/img/header-about.jpg'); background-repeat: no-repeat; background-position: center center; display:none;" data-stellar-background-ratio="0.3">
+ <section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="padding: 270px 0; background-image: url('{{ site.baseurl }}/img/header-about.jpg'); background-repeat: no-repeat; background-position: center center;" data-stellar-background-ratio="0.3">
  </section>
 
-<section id="page-title" class="siteHeader center" style="background: white; display">
+<section id="page-title" class="siteHeader center" style="background: white;">
   <img src="{{ site.baseurl }}/img/header-about.jpg" class="siteHeader" />
 </section>
 
@@ -99,7 +70,7 @@ jQuery(window).load( function(){
 
 
       <div class="container clearfix">
-        <div class="row" style="float: right; margin: auto; width: 85%;">
+        <div class="quotes row">
           <div class="col-md-9">
             <div>
               <h4 style="font-style: italic; margin-bottom: 0px; color: #444; font-weight: 500;">"The opportunity to create, to make a difference, to work towards something you believe in, with people that you care about, is extremely rare and special. We are so grateful to have the opportunity to do this each and every day."</h4>
