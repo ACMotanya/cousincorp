@@ -23,7 +23,11 @@
 }
 
 .siteHeader .siteLogo{
-    margin: -100px;
+  margin: -100px;
+}
+
+#page-title.page-title-parallax {
+   display: none;
 }
 
 /*
@@ -114,9 +118,11 @@ div.col-sm-12 img {
 .jobs-blurb {
 	margin-bottom: 30px;
 }
-
-#page-title.page-title-parallax {
-
+/* About Page Styles */
+.quotes {
+  float: right;
+  margin: auto;
+  width: 85%;
 }
 
 @media (min-width: 1386px) {
@@ -144,7 +150,6 @@ div.col-sm-12 img {
   #primary-menu.style-2 > div > ul > li > a {
     padding: 30px 10px;
   }
-
 }
 
 @media (max-width: 991px) {
@@ -159,6 +164,17 @@ div.col-sm-12 img {
 
   #logo img {
   	height: 75px;
+  }
+
+  #page-title.page-title-parallax {
+     display: block;
+  }
+
+  #page-title.siteHeader {
+     display: none;
+  }
+  .quotes {
+    width: 100%;
   }
 }
 
