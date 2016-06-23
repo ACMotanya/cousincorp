@@ -10,7 +10,7 @@ title: Cousin Corporation
 email: custserv@cousin.com
 description: Parent Company of craft jewelry wholesalers.
 baseurl: "/cousincorp" # the subpath of your site, e.g. /blog
-url: "https://acmotanya.github.io" # the base hostname & protocol for your site
+url: "https://www.cousin.com" # the base hostname & protocol for your site
 
 # Footer settings
 footer: Cousin Corporation
