@@ -64,19 +64,6 @@ video {
   width: 80%
 }
 
-/* --------------  for coming soon site --------------- */
-.video-coming {
-	left: 100px;
-	bottom: 60px;
-}
-
-.caption-coming {
-	bottom: 20px;
-	right: 50px;
-}
-/* --------------  for coming soon site --------------- */
-
-
 div.col_three_fifth.portfolio-single-image {
 	float: none;
 	margin: auto;
