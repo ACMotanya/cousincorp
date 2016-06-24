@@ -105,11 +105,18 @@ div.col-sm-12 img {
 .jobs-blurb {
 	margin-bottom: 30px;
 }
+
 /* About Page Styles */
 .quotes {
   float: right;
   margin: auto;
   width: 85%;
+}
+
+/* Meet Us Styles */
+.boss-man {
+  margin:auto;
+  width:66.6666%;
 }
 
 @media (min-width: 1386px) {
@@ -175,19 +182,12 @@ div.col-sm-12 img {
 	div.col-sm-12 img {
 		width: 80%;
 	}
-
-/* --------------  for coming soon site --------------- */
-	.video-coming {
-		left: 0px;
-		bottom: 0px;
-	}
-
-	.caption-coming {
-		bottom: 0px;
-		right: 0px;
-	}
+  /* Meet Us Styles */
+  .boss-man {
+    width: 100%;
+  }
 }
-/* --------------  for coming soon site --------------- */
+
 
 @media (min-width: 480px) and (max-width: 767px) {
 
