@@ -22,6 +22,21 @@
   position: relative;
 }
 
+.siteHeaderCareer{
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -50px;
+  margin-top: -25px;
+  z-index: 0;
+  position: relative;
+  border-bottom: none;
+}
+
+#page-title.siteHeaderCareer {
+  border-bottom: none;
+}
+
 .siteHeader .siteLogo{
   margin: -100px;
 }
