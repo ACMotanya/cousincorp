@@ -7,10 +7,10 @@
 
 # Site settings
 title: Cousin Corporation
-email: custserv@cousin.com
-description: Parent Company of craft jewelry wholesalers.
+email: customerservice@cousin.com
+description: Parent company of craft jewelry wholesalers.
 baseurl: "/cousincorp" # the subpath of your site, e.g. /blog
-url: "https://www.cousin.com" # the base hostname & protocol for your site
+url: "http://www.cousin.com" # the base hostname & protocol for your site
 
 # Footer settings
 footer: Cousin Corporation
