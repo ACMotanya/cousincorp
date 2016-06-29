@@ -134,6 +134,11 @@ div.col-sm-12 img {
   width:66.6666%;
 }
 
+/* careers page display all */
+div.acc_content.clearfix {
+  display: block !important;
+}
+
 @media (min-width: 1386px) {
 	#ljlogo {
 		margin: 24px 0px;
