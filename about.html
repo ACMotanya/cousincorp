@@ -5,38 +5,34 @@ layout: default
 <script>
 jQuery(window).load( function(){
 
-  var doughnutChartData = [
-    {
-      value: 30,
-      color:"#8CD0DA"
-    },
-    {
-      value : 50,
-      color : "#46BFBD"
-    },
-    {
-      value : 100,
-      color : "#2772AB"
-    },
-    {
-      value : 40,
-      color : "#949FB1"
-    },
-    {
-      value : 120,
-      color : "#4D5360"
-    }
-  ];
+  var pieChartData = [
+		{
+					value: 30,
+					color: "#8CD0DA"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#2772AB"
+				},
+				{
+					value : 45,
+					color : "#949FB1"
+				}
+
+			];
 
   var globalGraphSettings = {animation : Modernizr.canvas};
 
-  function showDoughnutChart(){
-    var ctx = document.getElementById("doughnutChartCanvas").getContext("2d");
-    new Chart(ctx).Doughnut(doughnutChartData,globalGraphSettings);
-  }
+  function showPieChart(){
+				var ctx = document.getElementById("pieChartCanvas").getContext("2d");
+				new Chart(ctx).Pie(pieChartData,globalGraphSettings);
+	}
 
-  $('#doughnutChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showDoughnutChart,300); },{accX: 0, accY: -155},'easeInCubic');
-
+  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
 });
 </script>
 
@@ -121,8 +117,8 @@ jQuery(window).load( function(){
 				</div>
 				<p>Our POS Analysis Methodology (PAM) is a proven data intelligence tool that delivers clear direction  on product recommendations. The results are always backed up by hard data that answers the question, "Why". Whether adding or deleting specific items from a program this system provides confidence that the right decisions are being made on the right products to maximize the opportunity.</p>
 			</div>
-			<div class="col_two_fifth col_last" id="doughnutChart" style="opacity: 0;">
-				<canvas id="doughnutChartCanvas" width="430" height="300"></canvas>
+			<div class="col_two_fifth col_last" id="pieChart" style="opacity: 0;">
+				<canvas id="pieChartCanvas" width="547" height="300"></canvas>
 			</div>
 		</div>
   </div>
