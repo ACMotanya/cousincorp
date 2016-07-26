@@ -1,9 +1,5 @@
-pictures Used
-    Dancing in the waves.jpg
-    Loop Bracelet.jpg
-    Natural Green Project-2.jpg
-    Shake your Shamrocks Earrings-2.jpg
+switch out the logo for the index page to be the same size
+ - already in the img folder
 
-add proper forms functions
-    formspree for the contact page
-    simpleform for the application form 
+rework the media queries for divisions
+  - change margin for the logos and all that jazz
