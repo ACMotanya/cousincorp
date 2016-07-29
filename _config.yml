@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Cousin Corporation of America
+email: customerservice@cousin.com
+description: Premier wholesaler of jewelry making supplies and a full service fashion company.
+baseurl: "/cousincorp" # the subpath of your site, e.g. /blog
+url: "http://www.cousin.com" # the base hostname & protocol for your site
+
+# Footer settings
+footer: Cousin Corporation
+
+# Build settings
+markdown: kramdown
+permalink: pretty
