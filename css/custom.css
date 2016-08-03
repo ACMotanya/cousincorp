@@ -121,6 +121,10 @@ div.col-sm-12 img {
 	margin-bottom: 30px;
 }
 
+.divisions-pair {
+  display: none;
+}
+
 /* About Page Styles */
 .quotes {
   float: right;
@@ -139,9 +143,18 @@ div.acc_content.clearfix {
   display: block !important;
 }
 
+@media (max-width: 1386px) {
+  #divisions {
+    display: none;
+  }
+  .divisions-pair {
+    display: unset;
+  }
+}
+
 @media (min-width: 1386px) {
 	#ljlogo {
-		margin: 24px 0px;
+		margin: 18px 0px;
 	}
 	#diylogo {
 		margin-bottom: 5px;
