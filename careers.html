@@ -2,6 +2,18 @@
 layout: default
 ---
 
+          <script>
+					$(document).ready(function() {
+            $("#validateButton").click(function() {
+							var hasErrors = $('#template-jobform').validator('validate').has('.has-error').length;
+					    if (hasErrors) {
+					      alert('Job application has errors.');
+					    } else {
+								$("#apply").click();
+							}
+						});
+					});
+					</script>
 
     <!-- Page Title
 		============================================= -
@@ -39,6 +51,78 @@ layout: default
 					<div class="col_three_fifth nobottommargin">
 
             <div class="fancy-title title-bottom-border">
+              <h3>Graphic Arts Coordinator</h3>
+            </div>
+
+            <p>Cousin Corporation is seeking a Graphic Arts Coordinator to add to our growing team! Cousin has two divisions – Cousin DIY and Laura Janelle. The Graphic Arts Coordinator’s primary role is to act as a liaison between our Graphic Arts team and our Product Development team to ensure graphic related projects are completed in a timely manner for both divisions. The ideal candidate has a great attitude, is extremely creative, enjoys handling multiple projects and thrives in an extremely fast-paced environment. </p>
+
+            <div class="accordion accordion-bg clearfix">
+
+              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-ok-circle"></i>Responsibilities</div>
+              <div class="acc_content clearfix" style="display: block;">
+                <ul class="iconlist iconlist-color nobottommargin">
+                  <li><i class="icon-ok"></i>Working closely with Graphic Designers and Product Development, as well as external resources and factories, to manage and traffic graphic related projects from concept phase through final delivery </li>
+                  <li><i class="icon-ok"></i>Attending internal meetings such as key account meetings, product development meetings, and production meetings that need graphic design department representation to ensure that projects are being completed in accordance with appropriate timelines</li>
+                  <li><i class="icon-ok"></i>Working with the Design Manager to assess new projects and assign them to the appropriate graphic artist</li>
+                  <li><i class="icon-ok"></i>Managing a master project list that will give an accurate snapshot of project progress for DIY and Laura Janelle divisions</li>
+                  <li><i class="icon-ok"></i>Communicating regularly with management, the graphic designers, the product development team, the sales team, other internal teams, and vendor partners to track and provide updates on project progress </li>
+                  <li><i class="icon-ok"></i>Providing input, ideas, and concepts for the overall design direction for various graphic projects. Examples of graphic projects to be managed include, but are not limited to:</li>
+                    <ul class="iconlist iconlist-color nobottommargin">
+                      <li>•	 Developing attractive, on trend packaging header art, displays, display signage, packaging methods, marketing materials, promotional items, advertisements, brochures, flyers and website graphics</li>
+                      <li>•	 Developing detailed specs for packaging art, product displays and packing instructions for products for domestic and overseas vendor partners</li>
+                      <li>•	 Obtaining and negotiating best price quotes for print jobs and displays for various projects</li>
+                      <li>•	 Approving print proofs and artwork received from various vendors</li>
+                      <li>•	 Organizing new catalog production through composition, final print and fulfillment</li>
+                      <li>•	 Providing graphic support for sales presentations developed for major retail partner meetings</li>
+                      <li>•	 Creating realistic mockup packaging, displays and program samples for all sales presentations and buyer requests</li>
+                      <li>•	 Working closely with imaging team to ensure all photography needs are being met for both divisions</li>
+                      <li>•	 Coordinating 3D imaging support for any and all new projects and concepts</li>
+                      <li>•	 Creating exciting art and imaging for all major client .com marketing</li>
+                      <li>•	 Generating interesting graphics, photo imaging, and videos for all internal and client social media requests</li>
+                      <li>•	 Managing and organizing digital assets for future use</li>
+                    </ul>
+                  <li><i class="icon-ok"></i>Handling general department needs, such as coordinating printer maintenance and ordering materials</li>
+                </ul>
+              </div>
+
+              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Desired Skills</div>
+              <div class="acc_content clearfix" style="display: block;">
+                <ul class="iconlist iconlist-color nobottommargin">
+                  <li><i class="icon-plus-sign"></i>Extensive knowledge of graphic design techniques and print production</li>
+                  <li><i class="icon-plus-sign"></i>Proficiency in Adobe Creative Suite and Microsoft Office products</li>
+                  <li><i class="icon-plus-sign"></i>High proficiency in Adobe Illustrator, Photoshop and Microsoft Excel</li>
+                  <li><i class="icon-plus-sign"></i>Able to take initiative to complete tasks and projects</li>
+                  <li><i class="icon-plus-sign"></i>Must be able to work both independently and in a group environment</li>
+                  <li><i class="icon-plus-sign"></i>Must have an understanding of relevant advertising trends</li>
+                  <li><i class="icon-plus-sign"></i>Ability to manage multiple projects at one time, possessing excellent organizational, analytical and logistical planning skills</li>
+                  <li><i class="icon-plus-sign"></i>Ability to effectively communicate with creative teams, sales teams and senior level management </li>
+                  <li><i class="icon-plus-sign"></i>Ability to maintain a high level of energy and positive attitude, while meeting or beating all deadlines in a fast-moving environment</li>
+                </ul>
+              </div>
+
+              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-ok-circle"></i>Education / Experience</div>
+              <div class="acc_content clearfix" style="display: block;">
+                <ul class="iconlist iconlist-color nobottommargin">
+                  <li><i class="icon-ok"></i>Minimum two years of experience working in a creative processing environment</li>
+                  <li><i class="icon-ok"></i>Bachelor’s Degree in Graphic Design or related field</li>
+                </ul>
+              </div>
+
+              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Salary and Benefits</div>
+              <div class="acc_content clearfix" style="display: block;">
+                <ul class="iconlist iconlist-color nobottommargin">
+                  <li><i class="icon-plus-sign"></i>Competitive salary and bonus</li>
+                  <li><i class="icon-plus-sign"></i>Health, Dental, Vision, Life, Disability, 401K, paid vacation and holidays</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <a href="#" data-scrollto="#job-apply" data-highlight="yellow" class="button button-3d button-black nomargin">Apply Now</a>
+
+            <div class="divider divider-short"><i class="icon-star3"></i></div>
+
+            <div class="fancy-title title-bottom-border">
               <h3>Accounting Clerk - Part-Time Position</h3>
             </div>
 
@@ -46,7 +130,7 @@ layout: default
 
             <div class="accordion accordion-bg clearfix">
 
-              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Responsibilities</div>
+              <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-ok-circle"></i>Responsibilities</div>
               <div class="acc_content clearfix" style="display: block;">
                 <ul class="iconlist iconlist-color nobottommargin">
                   <li><i class="icon-ok"></i>Review and verify invoices </li>
@@ -98,53 +182,69 @@ layout: default
 
     				<div class="contact-form-result"></div>
 
-  						<form action="https://getsimpleform.com/messages?form_api_token=73f1ad6ac641c1ebdda431189096a884" id="template-jobform" name="template-jobform" method="post" role="form">
-                <input type='hidden' name='redirect_to' value='http://www.cousin.com' />
+  						<form data-toggle="validator" action="https://getsimpleform.com/messages?form_api_token=73f1ad6ac641c1ebdda431189096a884" id="template-jobform" name="template-jobform" method="post" role="form">  <!-- 73f1ad6ac641c1ebdda431189096a884 -->
+
   							<div class="form-process"></div>
 
-  							<div class="col_half">
-  								<label for="template-jobform-fname">First Name <small>*</small></label>
-  								<input type="text" id="template-jobform-fname" name="FirstName" value="" class="sm-form-control required" />
-  							</div>
+                <div class="form-group">
+  							  <div class="col_half">
+  								  <label for="template-jobform-fname">First Name <small>*</small></label>
+  								  <input type="text" id="template-jobform-fname" name="FirstName" value="" required class="sm-form-control required" />
+  							    <div class="help-block with-errors"></div>
+									</div>
+								</div>
 
-  							<div class="col_half col_last">
-  								<label for="template-jobform-lname">Last Name <small>*</small></label>
-  								<input type="text" id="template-jobform-lname" name="LastName" value="" class="sm-form-control required" />
-  							</div>
-
-  							<div class="clear"></div>
-
-  							<div class="col_full">
-  								<label for="template-jobform-email">Email <small>*</small></label>
-  								<input type="email" id="template-jobform-email" name="email" value="" class="required email sm-form-control" />
-  							</div>
-
-  							<div class="col_half">
-  								<label for="template-jobform-city">City <small>*</small></label>
-  								<input type="text" name="city" id="template-jobform-city" value="" size="22" tabindex="5" class="sm-form-control required" />
-  							</div>
+                <div class="form-group">
+    							<div class="col_half col_last">
+    								<label for="template-jobform-lname">Last Name <small>*</small></label>
+    								<input type="text" id="template-jobform-lname" name="LastName" value="" required class="sm-form-control required" />
+                    <div class="help-block with-errors"></div>
+									</div>
+								</div>
 
   							<div class="clear"></div>
 
-  							<div class="col_full">
-  								<label for="template-jobform-service">Position <small>*</small></label>
-  								<select name="position" id="template-jobform-position"  tabindex="9" class="sm-form-control required">
-  									<option value="">-- Select Position --</option>
-                    <option value="Purchasing Analyst">Accounting Clerk</option>
-  								</select>
-  							</div>
+                <div class="form-group">
+  							  <div class="col_full">
+  								  <label for="template-jobform-email">Email <small>*</small></label>
+  								  <input type="email" id="template-jobform-email" name="email" value="" required class="required email sm-form-control" />
+                    <div class="help-block with-errors"></div>
+									</div>
+								</div>
+<!--
+                <div class="form-group">
+    							<div class="col_half">
+    								<label for="template-jobform-city">City <small>*</small></label>
+    								<input type="text" name="city" id="template-jobform-city" value="" size="22" tabindex="5" class="sm-form-control required" />
+                    <div class="help-block with-errors"></div>
+									</div>
+								</div>
+-->
+  							<div class="clear"></div>
 
-  							<div class="col_half">
-  								<label for="template-jobform-time">Start Date</label>
-  								<input type="text" name="startDate" id="template-jobform-start" value="" size="22" tabindex="7" class="sm-form-control" />
-  							</div>
+                <div class="form-group">
+    							<div class="col_full">
+    								<label for="template-jobform-service">Position <small>*</small></label>
+                    <input type="text" name="job" id="template-jobform-job" tabindex="6" value="" required class="sm-form-control required" />
+                    <div class="help-block with-errors"></div>
+									</div>
+								</div>
+
+                <div class="form-group">
+  							  <div class="col_half">
+  								  <label for="template-jobform-time">Available Start Date</label>
+  								  <input type="text" name="startDate" id="template-jobform-start" value="" required size="22" tabindex="7" class="sm-form-control" />
+                    <div class="help-block with-errors"></div>
+								  </div>
+							  </div>
 
   							<div class="clear"></div>
 
   							<div class="col_full">
   								<label for="template-jobform-website">Website (if any)</label>
   								<input type="text" name="website" id="template-jobform-website" value="" size="22" tabindex="8" class="sm-form-control" />
-  							</div>
+                </div>
+
 
   							<div class="col_full">
   								<label for="template-jobform-application">Cover Letter <small>*</small></label>
@@ -156,13 +256,17 @@ layout: default
   								<input id="input-1" type="file" name="cover-letter" class="file bottommargin-sm">
   							</div>
 
-  							<div class="col_half col_last">
-  								<label>Upload Resume</label><br>
-  								<input id="input-2" type="file" name="resume" class="file bottommargin-sm">
+                <div class="form-group">
+  							  <div class="col_half col_last">
+  								  <label>Upload Resume</label><br>
+  								  <input id="input-2" type="file" name="resume" required class="file bottommargin-sm">
+                    <div class="help-block with-errors"></div>
+  								</div>
   							</div>
 
   							<div class="col_full">
-  								<button class="button button-3d button-large btn-block nomargin" name="apply" type="submit" data-toggle="modal" data-target="#myModal" value="Job Application" id="apply">Send Application</button>
+                  <button class="button button-3d button-large btn-block nomargin" id="validateButton">Send Application</button>
+  								<button class="button button-3d button-large btn-block nomargin" name="apply" type="submit" data-toggle="modal" data-target="#myModal" value="Job Application" id="apply" onclick="$('#template-jobform').hide();" style="visibility:hidden;">Send Application</button>
   							</div>
   						</form>
 
