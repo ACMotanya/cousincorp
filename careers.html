@@ -254,14 +254,14 @@ layout: default
 
     				<div class="contact-form-result"></div>
 
-  						<form data-toggle="validator" action="https://getsimpleform.com/messages?form_api_token=73f1ad6ac641c1ebdda431189096a884" id="template-jobform" target="dummyframe" name="template-jobform" method="post" role="form">  <!-- 73f1ad6ac641c1ebdda431189096a884 -->
-
+  						<form data-toggle="validator" action="http://72.64.152.18:8082/ace/mailer/job.php" id="template-jobform" target="dummyframe" name="template-jobform" method="POST" role="form" enctype="multipart/form-data">  <!-- 73f1ad6ac641c1ebdda431189096a884 -->
+                <input type='hidden' name='realsubject' value='Cousin Job Application' />
   							<div class="form-process"></div>
 
                 <div class="form-group">
   							  <div class="col_half">
   								  <label for="template-jobform-fname">First Name <small>*</small></label>
-  								  <input type="text" id="template-jobform-fname" name="FirstName" value="" required class="sm-form-control required" />
+  								  <input type="text" id="template-jobform-fname" name="firstName" value="" required class="sm-form-control required" />
   							    <div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -269,7 +269,7 @@ layout: default
                 <div class="form-group">
     							<div class="col_half col_last">
     								<label for="template-jobform-lname">Last Name <small>*</small></label>
-    								<input type="text" id="template-jobform-lname" name="LastName" value="" required class="sm-form-control required" />
+    								<input type="text" id="template-jobform-lname" name="lastName" value="" required class="sm-form-control required" />
                     <div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -283,15 +283,7 @@ layout: default
                     <div class="help-block with-errors"></div>
 									</div>
 								</div>
-<!--
-                <div class="form-group">
-    							<div class="col_half">
-    								<label for="template-jobform-city">City <small>*</small></label>
-    								<input type="text" name="city" id="template-jobform-city" value="" size="22" tabindex="5" class="sm-form-control required" />
-                    <div class="help-block with-errors"></div>
-									</div>
-								</div>
--->
+
   							<div class="clear"></div>
 
                 <div class="form-group">
@@ -320,18 +312,18 @@ layout: default
 
   							<div class="col_full">
   								<label for="template-jobform-application">Cover Letter <small>*</small></label>
-  								<textarea name="CoverLetter" id="template-jobform-application" rows="6" tabindex="11" class="sm-form-control required"></textarea>
+  								<textarea name="coverLetter" id="template-jobform-application" rows="6" tabindex="11" class="sm-form-control required"></textarea>
   							</div>
 
                 <div class="col_half">
   								<label>Upload Cover Letter</label><br>
-  								<input id="input-1" type="file" name="cover-letter" class="file bottommargin-sm">
+  								<input id="input-1" type="file" name="doc[0]" class="file bottommargin-sm">
   							</div>
 
                 <div class="form-group">
   							  <div class="col_half col_last">
   								  <label>Upload Resume</label><br>
-  								  <input id="input-2" type="file" name="resume" required class="file bottommargin-sm">
+  								  <input id="input-2" type="file" name="doc[1]" required class="file bottommargin-sm">
                     <div class="help-block with-errors"></div>
   								</div>
   							</div>
