@@ -329,28 +329,17 @@ layout: default
   							</div>
 
   							<div class="col_full">
-                  <button class="button button-3d button-large btn-block nomargin" id="validateButton">Send Application</button>
-  								<button class="button button-3d button-large btn-block nomargin" name="apply" type="submit" data-toggle="modal" data-target="#myModal" value="Job Application" id="apply" onclick="$('#template-jobform').hide();" style="visibility:hidden;">Send Application</button>
+                  <button class="button button-3d button-large btn-block nomargin" type="button" id="validateButton">Send Application</button>
+  								<button name="apply" type="submit" data-toggle="modal" data-target="#myModal" value="Job Application" id="apply" onclick="$('#template-jobform').hide(); $('#thanks').show();" style="visibility:hidden;">Send Application</button>
   							</div>
   						</form>
 
-              <!-- Modal -->
-  						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  							<div class="modal-dialog">
-  								<div class="modal-body">
-  									<div class="modal-content">
-  										<div class="modal-body">
-  											<h4>Thank You!</h4>
-  											<p>We acknowledge receipt of your resume and application for a position at Cousin Corporation and sincerely appreciate your interest in our company. <br><br>
-                           We will screen all applicants and select candidates whose qualifications seem to meet our needs. We will carefully consider your application during the initial screening and will contact you if you are selected to continue in the recruitment process.</p>
-  										</div>
-  										<div class="modal-footer">
-  											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-  										</div>
-  									</div>
-  								</div>
-  							</div>
-  						</div>
+              <div id='thanks' style="display:none;">
+								<h4>Thank You!</h4>
+								<p>We acknowledge receipt of your resume and application for a position at Cousin Corporation and sincerely appreciate your interest in our company. <br><br>
+                   We will screen all applicants and select candidates whose qualifications seem to meet our needs. We will carefully consider your application during the initial screening and will contact you if you are selected to continue in the recruitment process.</p>
+							</div>
+
   					</div>
   				</div>
 				</div>
