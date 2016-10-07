@@ -97,7 +97,7 @@ a > i.front {
 
 /* styles for logos on index page */
 div.col-sm-12 img {
-	width: 75%;
+
 }
 
 .copyrights-menu a {
@@ -154,7 +154,7 @@ div.acc_content.clearfix {
 
 @media (min-width: 1386px) {
 	#ljlogo {
-		margin: 18px 0px;
+		margin: 27px 0px;
 	}
 	#diylogo {
 		margin-bottom: 5px;
