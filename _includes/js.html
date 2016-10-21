@@ -4,6 +4,7 @@
 
 <!-- External JavaScripts
 ============================================= -->
+	<script type="text/javascript" src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/plugins.js" | prepend: site.baseurl }}"></script>
 
 
@@ -11,15 +12,82 @@
 ============================================= -->
 <script type="text/javascript" src="{{ "/js/functions.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/validator.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
+<script type="text/javascript" src="{{ "/js/jquery.gmap.js" | prepend: site.baseurl }}"></script>
+
+
 
 
 <script>
- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+$(window).load( function(){
 
- ga('create', 'UA-83019940-1', 'auto');
- ga('send', 'pageview');
+  var pieChartData = [
+		{
+					value: 30,
+					color: "#8CD0DA"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#2772AB"
+				},
+				{
+					value : 45,
+					color : "#949FB1"
+				}
 
+			];
+
+  var globalGraphSettings = {animation : Modernizr.canvas};
+
+  function showPieChart(){
+		var ctx = document.getElementById("pieChartCanvas").getContext("2d");
+		new Chart(ctx).Pie(pieChartData,globalGraphSettings);
+	}
+
+  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
+});
+</script>
+<script>
+$(document).ready(function() {
+  $("#validateButton").click(function() {
+    var hasErrors = $('#template-jobform').validator('validate').has('.has-error').length;
+    if (hasErrors) {
+      alert('Job application has errors.');
+    } else {
+      $("#apply").click();
+    }
+  });
+});
+</script>
+<script type="text/javascript">
+  $('#google-map').gMap({
+
+    address: '12333 Enterprise blvd, Largo, Florida 33773',
+    maptype: 'HYBRID',
+    zoom: 13,
+    markers: [
+      {
+        address: "12333 enterprise blvd, Largo, Florida 33773",
+        html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Cousin</span></h4><p class="nobottommargin">Our goal each day is to make a <strong>positive</strong> difference in the lives of each other, our retailers, our vendors, and our business partners. .</p></div>',
+        icon: {
+          image: "../images/icons/map-icon-red.png",
+          iconsize: [32, 39],
+          iconanchor: [13,39]
+        }
+      }
+    ],
+    doubleclickzoom: false,
+    controls: {
+      panControl: true,
+      zoomControl: true,
+      mapTypeControl: true,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false
+    }
+  });
 </script>
