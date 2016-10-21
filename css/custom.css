@@ -11,6 +11,9 @@
 #content p {
   font-size: 15px;
 }
+#primary-menu > div > ul > li > a {
+  font-weight: 600;
+}
 
 .siteHeader{
   width: auto;
@@ -132,10 +135,18 @@ div.col-sm-12 img {
   width: 85%;
 }
 
+.heading-block h4, .heading-block h3 {
+  font-weight: 500;
+}
+
 /* Meet Us Styles */
 .boss-man {
   margin:auto;
   width:66.6666%;
+}
+
+.team-title h4 {
+  font-weight: 300;
 }
 
 /* careers page display all */

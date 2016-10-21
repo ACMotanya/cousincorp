@@ -2,57 +2,28 @@
 layout: default
 ---
 
-<script>
-jQuery(window).load( function(){
 
-  var pieChartData = [
-		{
-					value: 30,
-					color: "#8CD0DA"
-				},
-				{
-					value : 50,
-					color : "#46BFBD"
-				},
-				{
-					value : 100,
-					color : "#2772AB"
-				},
-				{
-					value : 45,
-					color : "#949FB1"
-				}
-
-			];
-
-  var globalGraphSettings = {animation : Modernizr.canvas};
-
-  function showPieChart(){
-				var ctx = document.getElementById("pieChartCanvas").getContext("2d");
-				new Chart(ctx).Pie(pieChartData,globalGraphSettings);
-	}
-
-  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
-});
-</script>
 
 
 
 <!-- Page Title
--============================================= -->
+-=============================================
 
  <section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="padding: 270px 0; background-image: url('{{ site.baseurl }}/img/header-about.jpg'); background-repeat: no-repeat; background-position: center center;" data-stellar-background-ratio="0.3">
  </section>
-
-<section id="page-title" class="siteHeader center" style="background: white;">
+-->
+<section id="page-title" class="siteHeader center visible-lg" style="background: white;" >
   <img src="{{ site.baseurl }}/img/header-about.jpg" class="siteHeader" />
+</section>
+<section id="page-title" class="center hidden-lg" style="background: white; padding-top: 25px; border-bottom: none; " >
+
 </section>
 
 
  <div class="content-wrap nopadding">
 
    <div class="container clearfix center notopmargin nobottommargin">
-     <h1 class="nobottommargin" style="color: #666;">About Us</h1>
+     <h1 class="nobottommargin uppercase" style="color: #666; font-weight: 300;">About Us</h1>
    </div>
 
  </div>
