@@ -22,7 +22,7 @@
 $(window).load( function(){
 
   var pieChartData = [
-		{
+				{
 					value: 30,
 					color: "#8CD0DA"
 				},
@@ -61,6 +61,8 @@ $(document).ready(function() {
       $("#apply").click();
     }
   });
+
+	($(".map-icon").click())
 });
 </script>
 <script type="text/javascript">
@@ -72,7 +74,7 @@ $(document).ready(function() {
     markers: [
       {
         address: "12333 enterprise blvd, Largo, Florida 33773",
-        html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Cousin</span></h4><p class="nobottommargin">Our goal each day is to make a <strong>positive</strong> difference in the lives of each other, our retailers, our vendors, and our business partners. .</p></div>',
+        html: '<div style="width: 275px;"><h4 class="t500" style="margin-bottom: 4px;">Hi, we\'re the <span>Cousin Corporation!</span></h4></div>',
         icon: {
           image: "../images/icons/map-icon-red.png",
           iconsize: [32, 39],
