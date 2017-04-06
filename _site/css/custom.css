@@ -2,17 +2,65 @@
 	Custom CSS
 -----------------------------------------------------------------*/
 
+
+/* gets rid of random line of demarcation  on headings*/
+.heading-block:after {
+  border: none;
+}
+
+#content p {
+  font-size: 15px;
+}
+#primary-menu > div > ul > li > a {
+  font-weight: 600;
+}
+
+.siteHeader{
+  width: auto;
+  height: 700px;
+  overflow: hidden;
+  margin-bottom: -150px;
+  margin-top: -150px;
+  z-index: 0;
+  position: relative;
+}
+
+.siteHeaderCareer{
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -50px;
+  margin-top: -25px;
+  z-index: 0;
+  position: relative;
+  border-bottom: none;
+}
+
+#page-title.siteHeaderCareer {
+  border-bottom: none;
+}
+
+.siteHeader .siteLogo{
+  margin: -100px;
+}
+
+#page-title.page-title-parallax {
+   display: none;
+}
+
+/*
 #header.sticky-style-2 {
 		height: 162px;
 }
 
 #header.sticky-style-2 > .container {
-	height: 112px;
+	height: 130px;
 }
 
 #header.sticky-style-2 #logo {
-	margin: 10px 0;
+	margin: 25px 0;
 }
+
 #logo img {
 	height: 85px;
 }
@@ -21,18 +69,17 @@
 	height: 50px;
 }
 
-#header.sticky-header.sticky-style-2 #header-wrap {
-	height: 50px;
+#primary-menu.style-2 > div > ul > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
-
-
+*/
 #primary-menu ul li > a {
 	color: #666;
 }
 
-#primary-menu.style-2 > div > ul > li > a {
-	padding-top: 15px;
-	padding-bottom: 15px;
+video {
+  width: 80%
 }
 
 div.col_three_fifth.portfolio-single-image {
@@ -42,32 +89,105 @@ div.col_three_fifth.portfolio-single-image {
 	margin-top: -20px;
 }
 
-.tp-caption.Agency-PlayBtn,
-.Agency-PlayBtn {
-	border-radius: 4px 4px 4px 4px;
+span.before-heading {
+	font-size: 18px;
+	font-family: Lato;
 }
 
 a > i.front {
 	font-size: 22px;
 }
 
-.portfolio-overlay {
-	background-color: rgba(255, 255, 255, 0.5);
+/* styles for logos on index page */
+div.col-sm-12 img {
+
 }
 
-div.col-sm-12 img {
-	width: 95%;
-}
 .copyrights-menu a {
 	font-weight: 900;
+	color: #666;
 }
 
 .copyrights-menu a:hover {
 	color: #1abc9C;
 }
 
-@media (max-width: 1199px) {
+.social-icon i {
+	color: #666;
+}
 
+.team-title h4 {
+	color: #444;
+}
+
+.jobs-blurb {
+	margin-bottom: 30px;
+}
+
+.divisions-pair {
+  display: none;
+}
+
+/* About Page Styles */
+.quotes {
+  float: right;
+  margin: auto;
+  width: 85%;
+}
+
+.heading-block h4, .heading-block h3 {
+  font-weight: 500;
+}
+
+/* Meet Us Styles */
+.boss-man {
+  margin:auto;
+  width:66.6666%;
+}
+
+.team-title h4 {
+  font-weight: 300;
+}
+
+/* careers page display all */
+div.acc_content.clearfix {
+  display: block !important;
+}
+
+@media (max-width: 1386px) {
+  #divisions {
+    display: none;
+  }
+  .divisions-pair {
+    display: unset;
+  }
+}
+
+@media (min-width: 1386px) {
+	#ljlogo {
+		margin: 27px 0px;
+	}
+	#diylogo {
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 1199px) {
+  video {
+    width: 100%
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1385px) {
+	div.col-sm-12 img {
+		width: 70%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1205px) {
+  #primary-menu.style-2 > div > ul > li > a {
+    padding: 30px 5px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -75,19 +195,43 @@ div.col-sm-12 img {
 		width: 100%;
 	}
 
+  #header.sticky-style-2 > .container {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  #logo img {
+  	height: 75px;
+  }
+
+  #page-title.page-title-parallax {
+     display: block;
+  }
+
+  #page-title.siteHeader {
+     display: none;
+  }
+  .quotes {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	div.col-sm-12 img {
-		width: 38%;
+		width: 60%;
 	}
 }
 
 @media (max-width: 767px) {
 	div.col-sm-12 img {
-		width: 90%;
+		width: 80%;
 	}
+  /* Meet Us Styles */
+  .boss-man {
+    width: 100%;
+  }
 }
+
 
 @media (min-width: 480px) and (max-width: 767px) {
 

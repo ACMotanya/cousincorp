@@ -1,3 +1,15 @@
-switch back index.html to the side by side video
+switch out the logo for the index page to be the same size
+ - already in the img folder
 
-find new products to put on the bottom of the Page
+rework the media queries for divisions
+  - change margin for the logos and all that jazz
+
+
+$ git add .
+$ git status // to see what changes are going to be committed
+$ git commit -m 'Some descriptive commit message'
+$ git push // push the master branch changes to GitHub
+$ git checkout gh-pages // go to the gh-pages branch
+$ git rebase master // bring gh-pages up to date with master
+$ git push // push the gh-pages branch changes to GitHub Pages
+$ git checkout master // return to the master branch
