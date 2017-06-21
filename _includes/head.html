@@ -21,7 +21,9 @@
 	<meta name="author" content="Cousin Corporation" />
   <meta name="description" content="{{ site.description }}">
 	<meta name="keywords" content="Laura Janelle,Cousin DIY,Cousin Corporation,Crafts,Supplies,Fashion,Laura Janlle by Cousin">
-
+	{% if page.url == "/cys/" %}
+	<meta http-equiv="refresh" content="0; url=http://www.create-your-style.com/Content.Node/get-started/Techniques.en.php" />
+	{% endif %}
 	<!-- Stylesheets
 	============================================= -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
