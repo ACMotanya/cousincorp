@@ -99,10 +99,6 @@ a > i.front {
 }
 
 /* styles for logos on index page */
-div.col-sm-12 img {
-
-}
-
 .copyrights-menu a {
 	font-weight: 900;
 	color: #666;
@@ -168,9 +164,7 @@ div.acc_content.clearfix {
 }
 
 @media (min-width: 1386px) {
-	#ljlogo {
-		margin: 27px 0px;
-	}
+
 	#diylogo {
 		margin-bottom: 5px;
 	}
