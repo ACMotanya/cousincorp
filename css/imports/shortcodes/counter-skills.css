@@ -13,7 +13,7 @@
 
 .counter {
 	font-size: 42px;
-	font-weight: 600;
+	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -147,7 +147,7 @@ body:not(.device-touch) .rounded-skill {
 
 .skills li .progress-percent .counter {
 	font-weight: 400;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Monserrat', sans-serif;
 }
 
 .progress-percent:after, .progress-percent:before {

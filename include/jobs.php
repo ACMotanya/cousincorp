@@ -1,19 +1,22 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'acemotanya@cousin.com', // Your Email Address
-				'name' => 'Ace Motanya' // Your Name
+				'email' => 'username@website.com', // Your Email Address
+				'name' => 'Your Name' // Your Name
 			);
 
 // Form Processing Messages
 $message_success = 'We have <strong>successfully</strong> received your Application and will get Back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = 'your-recaptcha-secret-key'; // Your reCaptcha Secret
+$recaptcha_secret = 'your-recaptcha-secret'; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
@@ -82,19 +85,26 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			}
 		}
 
+		// Uncomment the following Lines of Code if you want to Force reCaptcha Validation
+
+		// if( !isset( $_POST['g-recaptcha-response'] ) ) {
+		// 	echo '{ "alert": "error", "message": "Captcha not Submitted! Please Try Again." }';
+		// 	die;
+		// }
+
 		$mail->MsgHTML( $body );
 		$sendEmail = $mail->Send();
 
 		if( $sendEmail == true ):
-			echo 'We have <strong>successfully</strong> received your Application and will get Back to you as soon as possible.';
+			echo '{ "alert": "success", "message": "' . $message_success . '" }';
 		else:
-			echo 'Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '';
+			echo '{ "alert": "error", "message": "Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '" }';
 		endif;
 	} else {
-		echo 'Bot <strong>Detected</strong>.! Clean yourself Botster.!';
+		echo '{ "alert": "error", "message": "Bot <strong>Detected</strong>.! Clean yourself Botster.!" }';
 	}
 } else {
-	echo 'An <strong>unexpected error</strong> occured. Please Try Again later.';
+	echo '{ "alert": "error", "message": "An <strong>unexpected error</strong> occured. Please Try Again later." }';
 }
 
 ?>

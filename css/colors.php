@@ -20,7 +20,7 @@ $color = "#1ABC9C"; // Change your Color Here
 
 function checkhexcolor($color) {
 
-    return preg_match('/^#[a-f0-9]{6}$/i', $color);
+	return preg_match('/^#[a-f0-9]{6}$/i', $color);
 
 }
 
@@ -31,20 +31,20 @@ function checkhexcolor($color) {
  ================================================================== */
 
 if( isset( $_GET[ 'color' ] ) AND $_GET[ 'color' ] != '' ) {
-    $color = "#" . $_GET[ 'color' ];
+	$color = "#" . $_GET[ 'color' ];
 }
 
 if( !$color OR !checkhexcolor( $color ) ) {
-    $color = "#1ABC9C";
+	$color = "#1ABC9C";
 }
 
 ?>
 
 
 /* ----------------------------------------------------------------
-    Colors
+	Colors
 
-    Replace the HEX Code with your Desired Color HEX
+	Replace the HEX Code with your Desired Color HEX
 -----------------------------------------------------------------*/
 
 
@@ -56,12 +56,12 @@ if( !$color OR !checkhexcolor( $color ) ) {
 
 
 a,
-h1 > span:not(.nocolor),
-h2 > span:not(.nocolor),
-h3 > span:not(.nocolor),
-h4 > span:not(.nocolor),
-h5 > span:not(.nocolor),
-h6 > span:not(.nocolor),
+h1 > span:not(.nocolor):not(.badge),
+h2 > span:not(.nocolor):not(.badge),
+h3 > span:not(.nocolor):not(.badge),
+h4 > span:not(.nocolor):not(.badge),
+h5 > span:not(.nocolor):not(.badge),
+h6 > span:not(.nocolor):not(.badge),
 .header-extras li .he-text span,
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a,
@@ -69,7 +69,7 @@ h6 > span:not(.nocolor),
 #primary-menu div ul li.current > a,
 #primary-menu ul ul li:hover > a,
 #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover,
-#top-cart a:hover,
+#top-cart > a:hover,
 .top-cart-action span.top-checkout-price,
 .breadcrumb a:hover,
 .portfolio-filter li a:hover,
@@ -98,17 +98,13 @@ h6 > span:not(.nocolor),
 .team-title span,
 .pricing-box.best-price .pricing-price,
 .btn-link,
-.pagination > li > a, .pagination > li > span,
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus,
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
 .clear-rating-active:hover { color: <?php echo $color; ?>; }
 
 .color,
 .top-cart-item-desc a:hover,
+.portfolio-filter.style-3 li.activeFilter a,
 .faqlist li a:hover,
 .tagcloud a:hover,
 .dark .top-cart-item-desc a:hover,
@@ -130,8 +126,9 @@ h6 > span:not(.nocolor),
 #page-menu-wrap,
 #page-menu ul ul,
 #page-menu.dots-menu nav li.current a,
-#page-menu.dots-menu nav li .dots-menu-caption,
+#page-menu.dots-menu nav li div,
 .portfolio-filter li.activeFilter a,
+.portfolio-filter.style-4 li.activeFilter a:after,
 .portfolio-shuffle:hover,
 .entry-link:hover,
 .sale-flash,
@@ -148,7 +145,7 @@ h6 > span:not(.nocolor),
 ul.tab-nav.tab-nav2 li.ui-state-active a,
 .testimonial .flex-control-nav li a,
 .skills li .progress,
-.owl-carousel .owl-dots .owl-dot span,
+.owl-carousel .owl-dots .owl-dot,
 #gotoTop:hover,
 .dark .button-dark:hover,
 .dark .fbox-effect.fbox-dark .fbox-icon i:hover,
@@ -159,9 +156,10 @@ ul.tab-nav.tab-nav2 li.ui-state-active a,
 .dark ul.tab-nav.tab-nav2 li.ui-state-active a,
 .dark .tagcloud a:hover,
 .ei-slider-thumbs li.ei-slider-element,
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus,
+.nav-pills .show > .nav-link,
 .checkbox-style:checked + .checkbox-style-1-label:before,
 .checkbox-style:checked + .checkbox-style-2-label:before,
 .checkbox-style:checked + .checkbox-style-3-label:before,
@@ -174,7 +172,8 @@ input.switch-toggle-flat:checked + label,
 input.switch-toggle-flat:checked + label:after,
 input.switch-toggle-round:checked + label:before,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-themecolor,
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor { background-color: <?php echo $color; ?>; }
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor,
+.entry:after { background-color: <?php echo $color; ?>; }
 
 .bgcolor,
 .button.button-3d:not(.button-white):not(.button-dark):not(.button-border):not(.button-black):not(.button-red):not(.button-teal):not(.button-yellow):not(.button-green):not(.button-brown):not(.button-aqua):not(.button-purple):not(.button-leaf):not(.button-pink):not(.button-blue):not(.button-dirtygreen):not(.button-amber):not(.button-lime):hover,
@@ -182,17 +181,15 @@ input.switch-toggle-round:checked + label:before,
 .process-steps li.ui-tabs-active a,
 .sidenav > .ui-tabs-active > a,
 .sidenav > .ui-tabs-active > a:hover,
-.owl-carousel .owl-controls .owl-nav [class*=owl-]:hover,
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus { background-color: <?php echo $color; ?> !important; }
+.owl-carousel .owl-nav [class*=owl-]:hover,
+.page-item.active .page-link,
+.page-link:hover,
+.page-link:focus { background-color: <?php echo $color; ?> !important; }
 
 #primary-menu.style-4 > ul > li:hover > a,
 #primary-menu.style-4 > ul > li.current > a,
 .top-cart-item-image:hover,
+.portfolio-filter.style-3 li.activeFilter a,
 .post-timeline .entry:hover .entry-timeline,
 .post-timeline .entry:hover .timeline-divider,
 .cart-product-thumbnail img:hover,
@@ -224,7 +221,7 @@ input.switch-toggle-round:checked + label:before,
 .irs-single:after,
 .irs-to:after { border-top-color: <?php echo $color; ?>; }
 
-#page-menu.dots-menu nav li .dots-menu-caption:after,
+#page-menu.dots-menu nav li div:after,
 .title-block { border-left-color: <?php echo $color; ?>; }
 
 .title-block-right { border-right-color: <?php echo $color; ?>; }
@@ -242,12 +239,9 @@ input.switch-toggle-round:checked + label:before,
 .process-steps li.active a,
 .process-steps li.ui-tabs-active a,
 .tagcloud a:hover,
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus { border-color: <?php echo $color; ?> !important; }
+.page-item.active .page-link,
+.page-link:hover,
+.page-link:focus { border-color: <?php echo $color; ?> !important; }
 
 .fbox-effect.fbox-dark .fbox-icon i:after,
 .dark .fbox-effect.fbox-dark .fbox-icon i:after { box-shadow: 0 0 0 2px <?php echo $color; ?>; }
@@ -260,20 +254,20 @@ input.switch-toggle-round:checked + label:before,
 
 @media only screen and (max-width: 991px) {
 
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
-    body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
-    #primary-menu ul ul li:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
-    #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: <?php echo $color; ?> !important; }
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li:hover a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > ul > li.current a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li:hover a,
+	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
+	#primary-menu ul ul li:hover > a,
+	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
+	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: <?php echo $color; ?> !important; }
 
-    #page-menu nav { background-color: <?php echo $color; ?>; }
+	#page-menu nav { background-color: <?php echo $color; ?>; }
 
 }
 
 
 @media only screen and (max-width: 767px) {
 
-    .portfolio-filter li a:hover { color: <?php echo $color; ?>; }
+	.portfolio-filter li a:hover { color: <?php echo $color; ?>; }
 .}

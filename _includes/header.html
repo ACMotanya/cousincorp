@@ -1,68 +1,66 @@
 <!-- Header
 ============================================= -->
 
-<header id="header" class="sticky-style-2" style="z-index: 2;">
-
-  <div class="container clearfix">
-
-    <!-- Logo
-    ============================================= -->
-    <div id="logo" class="divcenter">
-      <a href="{{ site.baseurl }}/" class="standard-logo"><img class="divcenter" src="{{ site.baseurl }}/img/cca-logo-2018.png" alt="Cousin Logo"></a>
-      <a href="{{ site.baseurl }}/" class="retina-logo"><img class="divcenter" src="{{ site.baseurl }}/img/newlogo.png" alt="Cousin Logo"></a>
-    </div>
-
-    <!-- #logo end -->
-  </div>
-
+<header id="header" class="split-menu">
   <div id="header-wrap">
+    <div class="container clearfix">
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+      <!-- Logo
+      ============================================= -->
+      <div id="logo">
+        <a href="{{ site.baseurl }}/" class="standard-logo">
+          <img src="{{ site.baseurl }}/img/cca-logo-2018.png" alt="Cousin Logo">
+        </a>
+        <a href="{{ site.baseurl }}/" class="retina-logo">
+          <img src="{{ site.baseurl }}/img/newlogo.png" alt="Cousin Logo">
+        </a>
+      </div>
 
-    <!-- Primary Navigation
+      <!-- Primary Navigation
     ============================================= -->
-    <nav id="primary-menu" class="style-2 center">
-      <div class="container clearfix">
-        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+      <nav id="primary-menu">
         <ul>
           {% if page.url == "/" %}
-            <li class="current">
-              <a href="{{ site.baseurl }}/">
-                <div>Home</div>
-              </a>
-            </li>
+          <li class="current">
+            <a href="{{ site.baseurl }}/">
+              <div>Home</div>
+            </a>
+          </li>
           {% else %}
-            <li>
-              <a href="{{ site.baseurl }}/">
-                <div>Home</div>
-              </a>
-            </li>
+          <li>
+            <a href="{{ site.baseurl }}/">
+              <div>Home</div>
+            </a>
+          </li>
+          {% endif %} {% if page.url == "/about/" %}
+          <li class="current">
+            <a href="{{ site.baseurl }}/about">
+              <div>About Us</div>
+            </a>
+          </li>
+          {% else %}
+          <li>
+            <a href="{{ site.baseurl }}/about">
+              <div>About Us</div>
+            </a>
+          </li>
           {% endif %}
 
-          {% if page.url == "/about/" %}
-            <li class="current">
-              <a href="{{ site.baseurl }}/about">
-                <div>About Us</div>
-              </a>
-            </li>
-          {% else %}
-            <li>
-              <a href="{{ site.baseurl }}/about">
-                <div>About Us</div>
-              </a>
-            </li>
-          {% endif %}
+        </ul>
+        <ul>
 
           {% if page.url == "/meet/" %}
-            <li class="current">
-              <a href="{{ site.baseurl }}/meet">
-                <div>Meet Our Team</div>
-              </a>
-            </li>
+          <li class="current">
+            <a href="{{ site.baseurl }}/meet">
+              <div>Meet Our Team</div>
+            </a>
+          </li>
           {% else %}
-            <li>
-              <a href="{{ site.baseurl }}/meet">
-                <div>Meet Our Team</div>
-              </a>
-            </li>
+          <li>
+            <a href="{{ site.baseurl }}/meet">
+              <div>Meet Our Team</div>
+            </a>
+          </li>
           {% endif %}
 
 
@@ -71,46 +69,33 @@
               <div>Cousin DIY</div>
             </a>
           </li>
-          
+
           <li>
             <a href="https://www.laurajanelle.com" target="_blank">
               <div>Laura Janelle</div>
             </a>
           </li>
 
-          {% if page.url == "/careers/" %}
-            <li class="current">
-              <a href="{{ site.baseurl }}/careers">
-                <div>Careers</div>
-              </a>
-            </li>
-          {% else %}
-            <li>
-              <a href="{{ site.baseurl }}/careers">
-                <div>Careers</div>
-              </a>
-            </li>
-          {% endif %}
-
+          
           {% if page.url == "/contact/" %}
-            <li class="current">
-              <a href="{{ site.baseurl }}/contact">
-                <div>contact</div>
-              </a>
-            </li>
+          <li class="current">
+            <a href="{{ site.baseurl }}/contact">
+              <div>contact</div>
+            </a>
+          </li>
           {% else %}
-            <li>
-              <a href="{{ site.baseurl }}/contact">
-                <div>contact</div>
-              </a>
-            </li>
+          <li>
+            <a href="{{ site.baseurl }}/contact">
+              <div>contact</div>
+            </a>
+          </li>
           {% endif %}
         </ul>
-      </div>
-    </nav>
-    <!-- #primary-menu end -->
 
+      </nav>
+      <!-- #primary-menu end -->
+
+    </div>
   </div>
-
 </header>
 <!-- #header end -->
