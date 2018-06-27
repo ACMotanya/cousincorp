@@ -76,7 +76,7 @@
       ============================================= -->
       <div id="logo">
         <a href="/" class="standard-logo">
-          <img src="/img/cca-logo-2018.png" alt="Cousin Logo">
+          <img src="/img/small-cca.png" alt="Cousin Logo">
         </a>
         <a href="/" class="retina-logo">
           <img src="/img/newlogo.png" alt="Cousin Logo">
@@ -581,6 +581,7 @@
 
 <!-- Footer Scripts
 ============================================= -->
+<script type="text/javascript" src="/js/chart.js"></script>
 <script type="text/javascript" src="/js/functions.js"></script>
 <script type="text/javascript" src="/js/validator.min.js"></script>
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDr-wWyQRq0K-iZWQLc2E5IjCt0TP-AkOo"></script>
@@ -588,6 +589,7 @@
 
 
 <script>
+  /*
 $(window).load( function(){
 
   var pieChartData = [
@@ -616,9 +618,39 @@ $(window).load( function(){
 		var ctx = document.getElementById("pieChartCanvas").getContext("2d");
 		new Chart(ctx).Pie(pieChartData,globalGraphSettings);
 	}
-
+  
   $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
-});
+*/
+
+  var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						30,
+						50,
+						100,
+						45,
+					],
+					backgroundColor: [
+						"#8CD0DA",
+						"#46BFBD",
+            "#2772AB",
+						"#949FB1",
+
+					]
+				}]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById("chart-0").getContext("2d");
+			window.myPie = new Chart(ctx, config);
+		};
+
 </script>
 <script>
 $(document).ready(function() {

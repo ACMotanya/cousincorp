@@ -48,25 +48,27 @@ layout: default
 
 
     <div class="container clearfix">
-      <div class="col-md-4">
-        <div class="heading-block fancy-title nobottomborder title-bottom-border">
-          <h4>Our <span>Goal</span>.</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="heading-block fancy-title nobottomborder title-bottom-border">
+            <h4>Our <span>Goal</span>.</h4>
+          </div>
+          <p>Our goal each day is to make a positive difference in the lives of each other, our retailers, our vendors, and our business partners.</p>
         </div>
-        <p>Our goal each day is to make a positive difference in the lives of each other, our retailers, our vendors, and our business partners.</p>
-      </div>
 
-      <div class="col-md-4">
-        <div class="heading-block fancy-title nobottomborder title-bottom-border">
-          <h4>Our <span>Mantra</span>.</h4>
+        <div class="col-md-4">
+          <div class="heading-block fancy-title nobottomborder title-bottom-border">
+            <h4>Our <span>Mantra</span>.</h4>
+          </div>
+          <p>Our Mantra is "Be Mindful". We strive each day to live in the present moment. To be mindful. To be right here, right now. As we increase our awareness through mindfulness, our quality of thought and action grow significantly. This provides us the ability to reach our potential. </p>
         </div>
-        <p>Our Mantra is "Be Mindful". We strive each day to live in the present moment. To be mindful. To be right here, right now. As we increase our awareness through mindfulness, our quality of thought and action grow significantly. This provides us the ability to reach our potential. </p>
-      </div>
 
-      <div class="col-md-4 bottommargin">
-        <div class="heading-block fancy-title nobottomborder title-bottom-border">
-          <h4>Our <span>Products</span>.</h4>
+        <div class="col-md-4 bottommargin">
+          <div class="heading-block fancy-title nobottomborder title-bottom-border">
+            <h4>Our <span>Products</span>.</h4>
+          </div>
+          <p>Whether it's findings, accents or tools from our Cousin DIY division or trendy jewelry and fashion accessories from our Laura Janelle division, our products are developed from the direct result of extensive trend research and data intelligence. From publications to paid trend resources to fashion, trade shows to the runways we are constantly gathering and analyzing data from around the world to make sure we are "on trend" all the time. We feel extremely fortunate to have an amazing group of people on our creative team. Their energy and passion for fashion are contagious!x</p>
         </div>
-        <p>Whether it's findings, accents or tools from our Cousin DIY division or trendy jewelry and fashion accessories from our Laura Janelle division, our products are developed from the direct result of extensive trend research and data intelligence. From publications to paid trend resources to fashion, trade shows to the runways we are constantly gathering and analyzing data from around the world to make sure we are "on trend" all the time. We feel extremely fortunate to have an amazing group of people on our creative team. Their energy and passion for fashion are contagious!x</p>
       </div>
     </div>
 
@@ -85,9 +87,14 @@ layout: default
 				<p>Our POS Analysis Methodology (PAM) is a proven data intelligence tool that delivers clear direction on product recommendations. The results are always backed up by hard data that answers the question, "Why". Whether adding or deleting specific items from a program this system provides confidence that the right decisions are being made on the right products to maximize the opportunity.</p>
 			
       </div>
-			<div class="col_two_fifth col_last" id="pieChart" style="opacity: 0;">
-				<canvas id="pieChartCanvas" width="547" height="300"></canvas>
-			</div>
+      <!--
+      	<div class="col_two_fifth col_last" id="pieChart" style="opacity: 0;">
+				  <canvas id="pieChartCanvas" width="547" height="300"></canvas>
+        </div>
+    -->
+      <div class="col_two_fifth col_last bottommargin divcenter" style="max-width: 40%; min-height: 350px;">
+          <canvas id="chart-0" width="547" height="400"></canvas>
+        </div>
 		</div>
   </div>
 </section><!-- #content end -->
