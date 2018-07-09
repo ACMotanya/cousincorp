@@ -20,20 +20,9 @@
     ============================================= -->
       <nav id="primary-menu">
         <ul>
-          {% if page.url == "/" %}
-          <li class="current">
-            <a href="{{ site.baseurl }}/">
-              <div>Home</div>
-            </a>
-          </li>
-          {% else %}
-          <li>
-            <a href="{{ site.baseurl }}/">
-              <div>Home</div>
-            </a>
-          </li>
-
-          {% endif %} {% if page.url == "/about/" %}
+           
+          
+          {% if page.url == "/about/" %}
           <li class="current">
             <a href="{{ site.baseurl }}/about">
               <div>About Us</div>
@@ -63,8 +52,29 @@
           </li>
           {% endif %}
 
+          {% if page.url == "/" %}
+          <li class="current">
+            <a href="{{ site.baseurl }}/contact">
+              <div>Contact</div>
+            </a>
+          </li>
+          {% else %}
+          <li>
+            <a href="{{ site.baseurl }}/contact">
+              <div>Home</div>
+            </a>
+          </li>
+          {% endif %}
+
         </ul>
         <ul>
+
+          <li>
+            <a href="https://www.cosmostylejewelry.com" target="_blank">
+              <div>CosmoStyle Jewelry</div>
+            </a>
+          </li>
+
           <li>
             <a href="https://www.cousinDIY.com" target="_blank">
               <div>Cousin DIY</div>
@@ -78,19 +88,6 @@
           </li>
 
           
-          {% if page.url == "/contact/" %}
-          <li class="current">
-            <a href="{{ site.baseurl }}/contact">
-              <div>contact</div>
-            </a>
-          </li>
-          {% else %}
-          <li>
-            <a href="{{ site.baseurl }}/contact">
-              <div>contact</div>
-            </a>
-          </li>
-          {% endif %}
         </ul>
 
       </nav>
