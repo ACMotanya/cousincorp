@@ -8,28 +8,39 @@
   border: none;
 }
 */
+#header {
+ height: 144px;
+}
+
+#logo img {
+  height: 144px;
+}
 
 #primary-menu > ul.nav-left {
+  top: 18px;
   left: 83px;
   position: relative;
 }
-#primary-menu > ul.nav-right {
-  right: 59px;
-  position: relative;
-}
+
 
 @media (max-width: 1199px) {
   #primary-menu > ul.nav-left {
+    top: 18px;
     left: 0px;
     position: relative;
   }
   #primary-menu > ul.nav-right {
-    right: -30px;
+    right: -108px;
     position: relative;
   }
 }
 
 @media (max-width: 991px) {
+  #primary-menu > ul.nav-left {
+    top: 0px;
+    left: 0px;
+    position: relative;
+  }
   #primary-menu > ul.nav-right {
     right: 0px;
     position: relative;
