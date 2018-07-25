@@ -16,11 +16,23 @@
   height: 144px;
 }
 
+.cousin-nav {
+  max-width: 145px;
+}
+
+.lj-nav {
+  max-width: 125px; 
+  position: relative; 
+  bottom: 17px;
+}
+
 #primary-menu > ul.nav-left {
   top: 18px;
   left: 83px;
   position: relative;
 }
+
+
 
 
 @media (max-width: 1199px) {
@@ -30,8 +42,15 @@
     position: relative;
   }
   #primary-menu > ul.nav-right {
-    right: -108px;
+    right: -30px;
     position: relative;
+    top: 7px;
+  }
+  .cousin-nav {
+    max-width: 125px;
+  }
+  .lj-nav {
+    max-width: 105px;
   }
 }
 
@@ -43,6 +62,7 @@
   }
   #primary-menu > ul.nav-right {
     right: 0px;
+    top: 0px;
     position: relative;
   }
 }
