@@ -8,6 +8,47 @@
   border: none;
 }
 */
+
+.owl-container {
+  width: 100%;
+  /*
+  padding-right: 15px;
+  padding-left: 15px;
+    */
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+@media (min-width: 576px) {
+.owl-container {
+    max-width: 100%
+}
+}
+
+@media (min-width: 768px) {
+.owl-container {
+    max-width: 100%
+}
+}
+
+@media (min-width: 992px) {
+.owl-container {
+    max-width: 100%
+}
+}
+
+@media (min-width: 1200px) {
+.owl-container {
+    max-width: 1400px;
+}
+}
+
+
+
+
+
+
 #header {
  height: 144px;
 }
