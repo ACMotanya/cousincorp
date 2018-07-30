@@ -250,11 +250,11 @@
       <div class="col_one_third">
         <div class="team">
           <div class="team-image">
-            <img src="/img/team/laura-1.jpg" alt="Laura Backart">
+            <img src="/img/team/tina.jpg" alt="Tina Dillingham">
           </div>
           <div class="team-desc">
             <div class="team-title">
-              <h4>Laura Backert</h4><span>Warehouse Manager</span></div>
+              <h4>Tina Dillingham</h4><span>Creative Manager, Laura Janelle &amp; CosmoStyle by Cosmopolitan</span></div>
           </div>
         </div>
       </div>
@@ -322,11 +322,11 @@
       <div class="col_one_third">
         <div class="team">
           <div class="team-image">
-            <img src="/img/team/develyn-1.jpg" alt="Develyn Sippel">
+            <img src="/img/team/laura-1.jpg" alt="Laura Backert">
           </div>
           <div class="team-desc bottommargin-sm">
             <div class="team-title">
-              <h4>Develyn Sippel</h4><span>Accounting Manager</span></div>
+              <h4>Laura Backert</h4><span>Warehouse Manager</span></div>
           </div>
         </div>
       </div>
@@ -389,11 +389,11 @@
       <div class="col_one_third col_last nobottommargin">
         <div class="team">
           <div class="team-image">
-            <img src="/img/team/rob-1.jpg" alt="Rob Murphy">
+            <img src="/img/team/develyn-1.jpg" alt="Develyn Sippel">
           </div>
           <div class="team-desc">
             <div class="team-title">
-              <h4>Rob Murphy</h4><span>Inventory Control Manager</span></div>
+              <h4>Develyn Sippel</h4><span>Accounting Manager</span></div>
           </div>
         </div>
       </div>
@@ -402,35 +402,25 @@
 
       <div class="clear"></div>
     
-      <div class="col_one_third">
-        <div class="team">
-          <div class="team-image">
-      
-          </div>
-          <div class="team-desc">
-            
-          </div>
-        </div>
+      <div class="col_half">
+          <div class="team">
+              <div class="team-image boss-man">
+                <img src="/img/team/rob-1.jpg" alt="Rob Murphy">
+              </div>
+              <div class="team-desc">
+                <div class="team-title">
+                  <h4>Rob Murphy</h4><span>Inventory Control Manager</span></div>
+              </div>
+            </div>
       </div>
       
-      <div class="col_one_third nobottommargin">
+      <div class="col_half col_last nobottommargin">
         <div class="team">
-          <div class="team-image">
+          <div class="team-image boss-man">
             <img src="/img/team/jeffrabin-1.jpg" alt="Jeff Rabin">
           </div>
           <div class="team-desc">
             <div class="team-title"><h4>Jeff Rabin</h4><span>Information Technology Manager</span></div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col_one_third col_last nobottommargin">
-        <div class="team">
-          <div class="team-image">
-    
-          </div>
-          <div class="team-desc">
-           
           </div>
         </div>
       </div>
@@ -454,7 +444,7 @@
       <div class="col_half col_last tright">
         <div class="copyrights-menu copyright-links fright clearfix">
           <a class="t500" href="/about">ABOUT US</a>/
-          <a class="t500" href="/contact">MEET OUR TEAM</a>/
+          <a class="t500" href="/meet">MEET OUR TEAM</a>/
           <a class="t500" href="/contact">CONTACT</a>/
           <a class="t500" href="/careers">CAREERS</a>
         </div>
@@ -462,7 +452,7 @@
       <div class="col_half col_last tright">
         <div class="copyrights-menu copyright-links fright clearfix">
           <a class="t500" href="https://www.cosmostylejewelry.com" target="_blank">COSMOSTYLE</a>/
-          <a class="t500" href="https://www.cousindiy.com" target="_blank">COUSIN DIY</a>/
+          <a class="t500" href="https://www.cousindiy.com" target="_blank">COUSIN D.I.Y!</a>/
           <a class="t500" href="https://www.laurajanelle.com" target="_blank">LAURA JANELLE</a>
           
         </div>
@@ -520,111 +510,11 @@
 <script type="text/javascript" src="/js/jquery.gmap.js"></script>
 
 
-<script>
-  /*
-$(window).load( function(){
 
-  var pieChartData = [
-				{
-					value: 30,
-					color: "#8CD0DA"
-				},
-				{
-					value : 50,
-					color : "#46BFBD"
-				},
-				{
-					value : 100,
-					color : "#2772AB"
-				},
-				{
-					value : 45,
-					color : "#949FB1"
-				}
 
-			];
 
-  var globalGraphSettings = {animation : Modernizr.canvas};
 
-  function showPieChart(){
-		var ctx = document.getElementById("pieChartCanvas").getContext("2d");
-		new Chart(ctx).Pie(pieChartData,globalGraphSettings);
-	}
-  
-  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
-*/
 
-  var config = {
-			type: 'pie',
-			data: {
-				datasets: [{
-					data: [
-						30,
-						50,
-						100,
-						45,
-					],
-					backgroundColor: [
-						"#8CD0DA",
-						"#46BFBD",
-            "#2772AB",
-						"#949FB1",
-					]
-				}]
-			},
-			options: {
-				responsive: true
-			}
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById("chart-0").getContext("2d");
-			window.myPie = new Chart(ctx, config);
-		};
-
-</script>
-<script>
-$(document).ready(function() {
-  $("#validateButton").click(function() {
-    var hasErrors = $('#template-jobform').validator('validate').has('.has-error').length;
-    if (hasErrors) {
-      alert('Job application has errors.');
-    } else {
-      $("#apply").click();
-    }
-  });
-
-	($(".map-icon").click())
-});
-</script>
-<script type="text/javascript">
-  $('#google-map').gMap({
-
-    address: '12333 Enterprise blvd, Largo, Florida 33773',
-    maptype: 'HYBRID',
-    zoom: 13,
-    markers: [
-      {
-        address: "12333 enterprise blvd, Largo, Florida 33773",
-        html: '<div style="width: 275px;"><h4 class="t500" style="margin-bottom: 4px;">Hi, we\'re the <span>Cousin Corporation!</span></h4></div>',
-        icon: {
-          image: "../images/icons/map-icon-red.png",
-          iconsize: [32, 39],
-          iconanchor: [13,39]
-        }
-      }
-    ],
-    doubleclickzoom: false,
-    controls: {
-      panControl: true,
-      zoomControl: true,
-      mapTypeControl: true,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false
-    }
-  });
-</script>
 
   </body>
 </html>

@@ -16,41 +16,8 @@
 <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDr-wWyQRq0K-iZWQLc2E5IjCt0TP-AkOo"></script>
 <script type="text/javascript" src="{{ "/js/jquery.gmap.js" | prepend: site.baseurl }}"></script>
 
-
+{% if page.url == "/about/" %}
 <script>
-  /*
-$(window).load( function(){
-
-  var pieChartData = [
-				{
-					value: 30,
-					color: "#8CD0DA"
-				},
-				{
-					value : 50,
-					color : "#46BFBD"
-				},
-				{
-					value : 100,
-					color : "#2772AB"
-				},
-				{
-					value : 45,
-					color : "#949FB1"
-				}
-
-			];
-
-  var globalGraphSettings = {animation : Modernizr.canvas};
-
-  function showPieChart(){
-		var ctx = document.getElementById("pieChartCanvas").getContext("2d");
-		new Chart(ctx).Pie(pieChartData,globalGraphSettings);
-	}
-  
-  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
-*/
-
   var config = {
 			type: 'pie',
 			data: {
@@ -80,6 +47,9 @@ $(window).load( function(){
 		};
 
 </script>
+{% endif %}
+
+{% if page.url == "/careers/" %}
 <script>
 $(document).ready(function() {
   $("#validateButton").click(function() {
@@ -94,31 +64,118 @@ $(document).ready(function() {
 	($(".map-icon").click())
 });
 </script>
+{% endif %}
+
+
+{% if page.url == "/contact/" %}
 <script type="text/javascript">
+jQuery(window).on('load', function () {
   $('#google-map').gMap({
 
     address: '12333 Enterprise blvd, Largo, Florida 33773',
-    maptype: 'HYBRID',
-    zoom: 13,
-    markers: [
-      {
-        address: "12333 enterprise blvd, Largo, Florida 33773",
-        html: '<div style="width: 275px;"><h4 class="t500" style="margin-bottom: 4px;">Hi, we\'re the <span>Cousin Corporation!</span></h4></div>',
-        icon: {
-          image: "../images/icons/map-icon-red.png",
-          iconsize: [32, 39],
-          iconanchor: [13,39]
-        }
-      }
-    ],
-    doubleclickzoom: false,
-    controls: {
-      panControl: true,
-      zoomControl: true,
-      mapTypeControl: true,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false
+				maptype: 'ROADMAP',
+				zoom: 13,
+				markers: [{
+					address: '12333 Enterprise blvd, Largo, Florida 33773',
+					html: '<div style="width: 275px;"><h4 class="t500" style="margin-bottom: 4px;">Hi, we\'re the <span>Cousin Corporation!</span></h4></div>',
+					icon: {
+						image: "../images/icons/map-icon-red.png",
+						iconsize: [32, 39],
+          	iconanchor: [13,39]
+					}
+				}],
+				doubleclickzoom: false,
+				controls: {
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				},
+				styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#26b587"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#1697bf"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
     }
-  });
+]
+			});
+
+		});
 </script>
+
+{% endif %}

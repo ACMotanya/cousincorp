@@ -163,7 +163,7 @@
 			<p>
 				<span class="dropcap">C</span>ousin Corporation of America has been family-owned for over 40 years. It all began in 1970 as Enterprise Art, a retail craft store in Largo, Florida. 
 				With the success of arts and crafts, floral, and home decor products a wholesale division was created and Cousin was born. We have evolved and grown with the ever changing industry into a full-service fashion company with three divisions: 
-				CousinD.I.Y!, Laura Janelle and CosmoStyle by Cosmopolitan. From publications to paid trend resources, to fashion trade shows to the runways, we are constantly gathering and 
+				Cousin D.I.Y!, Laura Janelle and CosmoStyle by Cosmopolitan. From publications to paid trend resources, fashion trade shows to the runways, we are constantly gathering and 
 				analyzing data from around the world to make sure we are "on trend" all the time. We go from concept to design to packaging; all in house. We feel extremely fortunate to have an amazing group 
 				of people on our team. Their energy and passion for fashion is contagious!
 			</p>
@@ -322,7 +322,7 @@
       <div class="col_half col_last tright">
         <div class="copyrights-menu copyright-links fright clearfix">
           <a class="t500" href="/about">ABOUT US</a>/
-          <a class="t500" href="/contact">MEET OUR TEAM</a>/
+          <a class="t500" href="/meet">MEET OUR TEAM</a>/
           <a class="t500" href="/contact">CONTACT</a>/
           <a class="t500" href="/careers">CAREERS</a>
         </div>
@@ -330,7 +330,7 @@
       <div class="col_half col_last tright">
         <div class="copyrights-menu copyright-links fright clearfix">
           <a class="t500" href="https://www.cosmostylejewelry.com" target="_blank">COSMOSTYLE</a>/
-          <a class="t500" href="https://www.cousindiy.com" target="_blank">COUSIN DIY</a>/
+          <a class="t500" href="https://www.cousindiy.com" target="_blank">COUSIN D.I.Y!</a>/
           <a class="t500" href="https://www.laurajanelle.com" target="_blank">LAURA JANELLE</a>
           
         </div>
@@ -388,111 +388,11 @@
 <script type="text/javascript" src="/js/jquery.gmap.js"></script>
 
 
-<script>
-  /*
-$(window).load( function(){
 
-  var pieChartData = [
-				{
-					value: 30,
-					color: "#8CD0DA"
-				},
-				{
-					value : 50,
-					color : "#46BFBD"
-				},
-				{
-					value : 100,
-					color : "#2772AB"
-				},
-				{
-					value : 45,
-					color : "#949FB1"
-				}
 
-			];
 
-  var globalGraphSettings = {animation : Modernizr.canvas};
 
-  function showPieChart(){
-		var ctx = document.getElementById("pieChartCanvas").getContext("2d");
-		new Chart(ctx).Pie(pieChartData,globalGraphSettings);
-	}
-  
-  $('#pieChart').appear( function(){ $(this).css({ opacity: 1 }); setTimeout(showPieChart,300); },{accX: 0, accY: -155},'easeInCubic');
-*/
 
-  var config = {
-			type: 'pie',
-			data: {
-				datasets: [{
-					data: [
-						30,
-						50,
-						100,
-						45,
-					],
-					backgroundColor: [
-						"#8CD0DA",
-						"#46BFBD",
-            "#2772AB",
-						"#949FB1",
-					]
-				}]
-			},
-			options: {
-				responsive: true
-			}
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById("chart-0").getContext("2d");
-			window.myPie = new Chart(ctx, config);
-		};
-
-</script>
-<script>
-$(document).ready(function() {
-  $("#validateButton").click(function() {
-    var hasErrors = $('#template-jobform').validator('validate').has('.has-error').length;
-    if (hasErrors) {
-      alert('Job application has errors.');
-    } else {
-      $("#apply").click();
-    }
-  });
-
-	($(".map-icon").click())
-});
-</script>
-<script type="text/javascript">
-  $('#google-map').gMap({
-
-    address: '12333 Enterprise blvd, Largo, Florida 33773',
-    maptype: 'HYBRID',
-    zoom: 13,
-    markers: [
-      {
-        address: "12333 enterprise blvd, Largo, Florida 33773",
-        html: '<div style="width: 275px;"><h4 class="t500" style="margin-bottom: 4px;">Hi, we\'re the <span>Cousin Corporation!</span></h4></div>',
-        icon: {
-          image: "../images/icons/map-icon-red.png",
-          iconsize: [32, 39],
-          iconanchor: [13,39]
-        }
-      }
-    ],
-    doubleclickzoom: false,
-    controls: {
-      panControl: true,
-      zoomControl: true,
-      mapTypeControl: true,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false
-    }
-  });
-</script>
 
   </body>
 </html>
