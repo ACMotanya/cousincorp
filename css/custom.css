@@ -69,6 +69,50 @@
   bottom: 17px;
 }
 
+/* Used for regular text Nav */
+#primary-menu > ul.nav-left{
+  top: 18px;
+  left: 83px;
+  position: relative;
+}
+
+#primary-menu > ul.nav-right {
+  top: 18px;
+  
+  position: relative;
+}
+
+
+@media (max-width: 1199px) {
+  #primary-menu > ul.nav-left {
+    top: 18px;
+    left: 0px;
+    position: relative;
+  }
+  #primary-menu > ul.nav-right {
+    top: 18px;
+    right: 0px;
+    position: relative;
+  }
+  
+  
+}
+
+@media (max-width: 991px) {
+  #primary-menu > ul.nav-left {
+    top: 0px;
+    left: 0px;
+    position: relative;
+  }
+  #primary-menu > ul.nav-right {
+    right: 0px;
+    top: 0px;
+    position: relative;
+  }
+}
+
+
+/* for ugly Denny Logo based NAV
 #primary-menu > ul.nav-left {
   top: 18px;
   left: 83px;
@@ -109,7 +153,7 @@
     position: relative;
   }
 }
-
+*/
 body {
   font-weight: 300;
 }
@@ -162,7 +206,7 @@ h3, h4{
 }
 
 #primary-menu ul li > a {
-  color: #666;
+  /*color: #666; */
   font-weight: 400;
 }
 
